@@ -180,10 +180,11 @@ a {
 
 .hero-image {
     align-self: stretch;
-    background:
-        radial-gradient(circle at 66% 28%, rgba(247, 234, 164, 0.78), transparent 38%),
-        linear-gradient(180deg, rgba(196, 121, 74, 0.14), rgba(69, 46, 41, 0.22)),
-        linear-gradient(130deg, #d4bc8d 10%, #9e8066 45%, #8f7968 100%);
+    background-color: #d8c8b0;
+    background-image: url('../img/portada-tras.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-left: 1px solid rgba(255, 255, 255, 0.16);
 }
 
@@ -450,7 +451,8 @@ a {
     }
 
     .hero-image {
-        min-height: 320px;
+        min-height: 260px;
+        border-left: 0;
     }
 
     .hero-wave {
