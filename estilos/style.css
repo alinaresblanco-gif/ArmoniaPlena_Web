@@ -649,7 +649,8 @@ a {
 }
 
 .contact-map-button {
-    display: inline-flex;
+    display: flex;
+    width: fit-content;
     margin: 1.2rem auto 0;
     padding: 0.85rem 1.5rem;
     border-radius: 999px;
