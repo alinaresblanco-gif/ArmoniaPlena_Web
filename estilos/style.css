@@ -233,10 +233,10 @@ a {
     border-radius: 14px;
     border: 8px solid #b14fb3;
     box-shadow: var(--shadow-soft);
-    background-image: url('../img/rosa_img.png');
+    background-image: url('../img/portada-tras.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .about-content h2 {
