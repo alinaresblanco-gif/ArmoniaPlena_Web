@@ -151,13 +151,13 @@ a {
     position: relative;
     min-height: 520px;
     overflow: hidden;
-    background: linear-gradient(180deg, #b56bc0 0%, #ce94d3 48%, #f7f3f8 100%);
+    background: #b56bc0;
 }
 
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(175, 84, 179, 0.24) 0%, rgba(175, 84, 179, 0.06) 58%, transparent 100%);
+    background: transparent;
 }
 
 .hero-inner {
