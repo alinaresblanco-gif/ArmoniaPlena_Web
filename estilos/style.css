@@ -233,11 +233,10 @@ a {
     border-radius: 14px;
     border: 8px solid #b14fb3;
     box-shadow: var(--shadow-soft);
-    background-color: #ead8d1;
     background-image: url('../img/rosa_img.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 .about-content h2 {
