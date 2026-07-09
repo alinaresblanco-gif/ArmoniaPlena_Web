@@ -458,17 +458,47 @@ a {
 
 .site-footer {
     margin-top: 2rem;
-    padding: 1rem 0 2rem;
+    padding: 1.1rem 0 2.1rem;
+    background: rgba(255, 255, 255, 0.92);
+    border-top: 1px solid rgba(159, 74, 167, 0.16);
 }
 
-.footer-inner {
+.footer-branding {
+    min-height: 86px;
     display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid rgba(159, 74, 167, 0.18);
-    color: #666;
-    font-size: 0.95rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-brand-text {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.18rem;
+}
+
+.footer-brand-text strong {
+    display: block;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    font-size: clamp(1.45rem, 3vw, 2.5rem);
+    color: var(--purple-900);
+    line-height: 1;
+}
+
+.footer-brand-text small {
+    display: block;
+    margin-top: 0.15rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    color: #8e8e8e;
+    font-weight: 600;
+    line-height: 1.15;
+}
+
+.footer-brand-text small span {
+    display: block;
 }
 
 @media (max-width: 1220px) {
@@ -606,10 +636,17 @@ a {
     }
 
     .service-list,
-    .contact-grid,
-    .footer-inner {
+    .contact-grid {
         grid-template-columns: 1fr;
-        flex-direction: column;
+    }
+
+    .footer-branding {
+        min-height: 74px;
+    }
+
+    .footer-brand-text small {
+        font-size: 0.68rem;
+        letter-spacing: 0.1em;
     }
 }
 
@@ -661,5 +698,14 @@ a {
 
     .service-item h3 {
         font-size: 1rem;
+    }
+
+    .footer-brand-text strong {
+        font-size: clamp(1.2rem, 6vw, 1.55rem);
+    }
+
+    .footer-brand-text small {
+        font-size: 0.62rem;
+        letter-spacing: 0.08em;
     }
 }
