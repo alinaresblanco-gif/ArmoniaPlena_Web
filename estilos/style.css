@@ -516,6 +516,7 @@ a {
 
 .contact-form-card h2 {
     margin-bottom: 1.1rem;
+    text-align: center;
 }
 
 .contact-form {
@@ -590,6 +591,7 @@ a {
 
 .contact-fixed-card h2 {
     margin-bottom: 0.9rem;
+    text-align: center;
 }
 
 .contact-fixed-list {
@@ -627,11 +629,13 @@ a {
 
 .contact-map-card h2 {
     margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 .contact-map-text {
     margin-top: 0;
     margin-bottom: 1.25rem;
+    text-align: center;
 }
 
 .contact-map-frame-wrap {
@@ -674,12 +678,7 @@ a {
 
 .contact-social-card h2 {
     margin-bottom: 0.45rem;
-}
-
-.contact-social-text {
-    margin: 0 0 1rem;
-    color: #6a6a6a;
-    font-weight: 500;
+    text-align: center;
 }
 
 .contact-social-grid {
@@ -727,6 +726,10 @@ a {
 
 .contact-social-label {
     font-weight: 700;
+}
+
+.contact-fixed-list li {
+    text-align: center;
 }
 
 .site-footer {
