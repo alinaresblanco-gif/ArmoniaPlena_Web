@@ -504,6 +504,78 @@ a {
     margin: 0.45rem 0 0;
 }
 
+.contact-form-section {
+    display: grid;
+    place-items: center;
+}
+
+.contact-form-card {
+    width: min(100%, 760px);
+    padding: 1.8rem;
+}
+
+.contact-form-card h2 {
+    margin-bottom: 1.1rem;
+}
+
+.contact-form {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.contact-form label {
+    font-weight: 700;
+    color: #7e2d87;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: 1px solid rgba(159, 74, 167, 0.25);
+    border-radius: 10px;
+    padding: 0.8rem 0.9rem;
+    font: inherit;
+    color: #4f4f4f;
+    background: #fff;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #a44dae;
+    box-shadow: 0 0 0 3px rgba(164, 77, 174, 0.16);
+}
+
+.contact-submit {
+    margin-top: 0.35rem;
+    justify-self: start;
+    padding: 0.85rem 1.5rem;
+    border: 0;
+    border-radius: 999px;
+    font-family: 'Montserrat', system-ui, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(180deg, #58b177, #469f68);
+    box-shadow: 0 6px 12px rgba(55, 128, 82, 0.28);
+    cursor: pointer;
+}
+
+.contact-confirmation {
+    margin: 1rem 0 0;
+    padding: 0.8rem 0.95rem;
+    border-radius: 10px;
+    background: #f3fbf6;
+    border: 1px solid rgba(70, 159, 104, 0.26);
+    color: #2d7f4c;
+    font-weight: 500;
+}
+
 .site-footer {
     margin-top: 2rem;
     padding: 1.1rem 0 2.1rem;
@@ -710,6 +782,14 @@ a {
     .service-list,
     .contact-grid {
         grid-template-columns: 1fr;
+    }
+
+    .contact-form-card {
+        padding: 1.25rem;
+    }
+
+    .contact-submit {
+        width: 100%;
     }
 
     .footer-branding {
