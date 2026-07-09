@@ -444,7 +444,7 @@ a {
     }
 
     .hero-content {
-        padding: 2.8rem 0.5rem 2.2rem;
+        padding: 2.8rem 0.5rem 1.5rem;
         text-align: center;
     }
 
@@ -458,11 +458,11 @@ a {
 
     .hero-image {
         width: calc(100% - 2rem);
-        min-height: 240px;
+        min-height: 220px;
         justify-self: center;
-        margin: 0 auto 2rem;
+        margin: 0 auto 4rem;
         border-left: 0;
-        background-position: center 9%;
+        background-position: center -1%;
         background-size: cover;
         /* Recorta la parte inferior con un arco para acompanar la ola rosa */
         clip-path: polygon(
