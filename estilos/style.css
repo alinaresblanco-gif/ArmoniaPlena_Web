@@ -570,10 +570,11 @@ a {
     margin: 1rem 0 0;
     padding: 0.8rem 0.95rem;
     border-radius: 10px;
-    background: #f3fbf6;
-    border: 1px solid rgba(70, 159, 104, 0.26);
-    color: #2d7f4c;
+    background: #f7edf9;
+    border: 1px solid rgba(159, 74, 167, 0.28);
+    color: #9f4aa7;
     font-weight: 500;
+    text-align: center;
 }
 
 .site-footer {
