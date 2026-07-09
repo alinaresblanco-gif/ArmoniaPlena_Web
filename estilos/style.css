@@ -459,12 +459,13 @@ a {
 
     .hero-image {
         width: min(84%, 340px);
-        min-height: 220px;
+        aspect-ratio: 354 / 290;
+        min-height: 0;
         justify-self: center;
         margin: 0 auto 4rem;
         border-left: 0;
-        background-position: center -21%;
-        background-size: 102% auto;
+        background-position: center;
+        background-size: cover;
         /* Recorta la parte inferior con un arco para acompanar la ola rosa */
         clip-path: polygon(
             0 0,
