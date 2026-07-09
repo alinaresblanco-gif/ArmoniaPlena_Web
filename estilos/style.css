@@ -247,6 +247,10 @@ a {
     line-height: 1.45;
 }
 
+.hero-page-title.hero-with-subtitle .hero-content {
+    transform: translateY(-15px);
+}
+
 .btn-whatsapp {
     display: inline-flex;
     align-items: center;
@@ -667,6 +671,10 @@ a {
         font-size: 0.96rem;
     }
 
+    .hero-page-title.hero-with-subtitle .hero-content {
+        transform: translateY(-12px);
+    }
+
     .hero-title-logo {
         width: clamp(74px, 18vw, 108px);
         margin-bottom: 0.6rem;
@@ -748,6 +756,10 @@ a {
 
     .hero-page-title.hero-with-subtitle .hero-content p {
         font-size: 0.9rem;
+    }
+
+    .hero-page-title.hero-with-subtitle .hero-content {
+        transform: translateY(-10px);
     }
 
     .hero-title-logo {
