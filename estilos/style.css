@@ -661,6 +661,74 @@ a {
     box-shadow: 0 6px 12px rgba(55, 128, 82, 0.28);
 }
 
+.contact-social-section {
+    display: grid;
+    place-items: center;
+    margin-top: 1.8rem;
+}
+
+.contact-social-card {
+    width: min(100%, 760px);
+    padding: 2rem 2rem 2.1rem;
+}
+
+.contact-social-card h2 {
+    margin-bottom: 0.45rem;
+}
+
+.contact-social-text {
+    margin: 0 0 1rem;
+    color: #6a6a6a;
+    font-weight: 500;
+}
+
+.contact-social-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.8rem;
+}
+
+.contact-social-link {
+    display: grid;
+    place-items: center;
+    gap: 0.55rem;
+    padding: 1rem 0.7rem;
+    border-radius: 14px;
+    text-align: center;
+    border: 1px solid rgba(159, 74, 167, 0.16);
+    background: #fff;
+    box-shadow: 0 6px 14px rgba(123, 86, 145, 0.08);
+    color: #8f3395;
+}
+
+.contact-social-whatsapp {
+    color: #2f8a56;
+}
+
+.contact-social-placeholder {
+    color: #8f3395;
+}
+
+.contact-social-icon {
+    display: grid;
+    place-items: center;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #f7edf9;
+    color: inherit;
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.contact-social-link:hover .contact-social-icon {
+    transform: translateY(-2px);
+}
+
+.contact-social-label {
+    font-weight: 700;
+}
+
 .site-footer {
     margin-top: 2rem;
     padding: 1.1rem 0 2.1rem;
@@ -885,6 +953,20 @@ a {
         height: 280px;
     }
 
+    .contact-social-card {
+        padding: 1.35rem 1.25rem 1.45rem;
+    }
+
+    .contact-social-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+
+@media (max-width: 480px) {
+    .contact-social-grid {
+        grid-template-columns: 1fr;
+    }
+}
     .contact-submit {
         width: 100%;
     }
