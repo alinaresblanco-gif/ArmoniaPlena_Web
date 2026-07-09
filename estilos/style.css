@@ -577,6 +577,43 @@ a {
     text-align: center;
 }
 
+.contact-fixed-section {
+    display: grid;
+    place-items: center;
+    margin-top: 1.2rem;
+}
+
+.contact-fixed-card {
+    width: min(100%, 760px);
+    padding: 1.6rem 1.8rem;
+}
+
+.contact-fixed-card h2 {
+    margin-bottom: 0.9rem;
+}
+
+.contact-fixed-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 0.75rem;
+}
+
+.contact-fixed-list li {
+    border: 1px solid rgba(159, 74, 167, 0.16);
+    border-radius: 10px;
+    background: #fff;
+    padding: 0.75rem 0.9rem;
+    color: #5a5a5a;
+    line-height: 1.45;
+}
+
+.contact-fixed-list a {
+    color: #8f3395;
+    font-weight: 700;
+}
+
 .site-footer {
     margin-top: 2rem;
     padding: 1.1rem 0 2.1rem;
@@ -787,6 +824,10 @@ a {
 
     .contact-form-card {
         padding: 1.25rem;
+    }
+
+    .contact-fixed-card {
+        padding: 1.15rem;
     }
 
     .contact-submit {
