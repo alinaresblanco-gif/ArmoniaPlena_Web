@@ -161,7 +161,7 @@ a {
     z-index: 2;
     min-height: 520px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 .hero-content {
@@ -181,16 +181,6 @@ a {
     margin: 1rem 0 2rem;
     font-size: clamp(1.2rem, 2.1vw, 2rem);
     font-weight: 600;
-}
-
-.hero-image {
-    align-self: stretch;
-    background-color: #d8c8b0;
-    background-image: url('../img/portada-tras.png?v=20260709-cache17');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-left: 1px solid rgba(255, 255, 255, 0.16);
 }
 
 .hero-wave {
@@ -455,33 +445,6 @@ a {
 
     .btn-whatsapp {
         margin-inline: auto;
-    }
-
-    .hero-image {
-        width: min(84%, 340px);
-        aspect-ratio: 354 / 290;
-        min-height: 0;
-        justify-self: center;
-        margin: 0 auto 4rem;
-        border-left: 0;
-        background-position: center;
-        background-size: cover;
-        /* Recorta la parte inferior con un arco para acompanar la ola rosa */
-        clip-path: polygon(
-            0 0,
-            100% 0,
-            100% 100%,
-            90% 98%,
-            80% 95%,
-            70% 92%,
-            60% 90%,
-            50% 89%,
-            40% 90%,
-            30% 92%,
-            20% 95%,
-            10% 98%,
-            0 100%
-        );
     }
 
     .hero-wave {
