@@ -237,6 +237,16 @@ a {
     display: none;
 }
 
+.hero-page-title.hero-with-subtitle .hero-content p {
+    display: block;
+    margin: 0.65rem auto 0;
+    max-width: 36ch;
+    color: rgba(255, 255, 255, 0.95);
+    font-size: clamp(1rem, 1.8vw, 1.2rem);
+    font-weight: 500;
+    line-height: 1.45;
+}
+
 .btn-whatsapp {
     display: inline-flex;
     align-items: center;
@@ -651,6 +661,12 @@ a {
         padding: 0;
     }
 
+    .hero-page-title.hero-with-subtitle .hero-content p {
+        max-width: 30ch;
+        margin-top: 0.55rem;
+        font-size: 0.96rem;
+    }
+
     .hero-title-logo {
         width: clamp(74px, 18vw, 108px);
         margin-bottom: 0.6rem;
@@ -728,6 +744,10 @@ a {
 
     .hero-page-title .hero-content h1 {
         font-size: clamp(2rem, 10vw, 2.6rem);
+    }
+
+    .hero-page-title.hero-with-subtitle .hero-content p {
+        font-size: 0.9rem;
     }
 
     .hero-title-logo {
