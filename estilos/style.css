@@ -82,6 +82,11 @@ a {
     letter-spacing: 0.14em;
     color: #8e8e8e;
     font-weight: 600;
+    line-height: 1.15;
+}
+
+.brand-text small span {
+    display: block;
 }
 
 .site-nav {
@@ -365,7 +370,7 @@ a {
 
 @media (max-width: 700px) {
     .header-wrap {
-        min-height: 96px;
+        min-height: 124px;
         gap: 0.45rem;
     }
 
@@ -398,10 +403,11 @@ a {
     }
 
     .brand-text small {
-        margin-top: 0.2rem;
-        font-size: 0.48rem;
-        letter-spacing: 0.09em;
-        line-height: 1.2;
+        margin-top: 0.3rem;
+        font-size: 0.96rem;
+        letter-spacing: 0.05em;
+        line-height: 1.12;
+        font-weight: 700;
     }
 
     .nav-toggle {
@@ -451,9 +457,13 @@ a {
     }
 
     .hero-image {
-        min-height: 300px;
+        width: calc(100% - 2rem);
+        min-height: 240px;
+        justify-self: center;
+        margin: 0 auto 2rem;
         border-left: 0;
-        background-position: center 30%;
+        background-position: center 24%;
+        background-size: cover;
     }
 
     .hero-wave {
@@ -494,8 +504,9 @@ a {
     }
 
     .brand-text small {
-        font-size: 0.42rem;
-        letter-spacing: 0.08em;
+        font-size: 0.78rem;
+        letter-spacing: 0.04em;
+        line-height: 1.14;
     }
 
     .hero-content h1 {
