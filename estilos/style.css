@@ -465,7 +465,7 @@ a {
         margin: 0 auto 4rem;
         border-left: 0;
         background-position: center -21%;
-        background-size: cover;
+        background-size: contain;
         /* Recorta la parte inferior con un arco para acompanar la ola rosa */
         clip-path: polygon(
             0 0,
