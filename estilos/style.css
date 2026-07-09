@@ -458,7 +458,7 @@ a {
     }
 
     .hero-image {
-        width: calc(100% - 2rem);
+        width: min(78%, 320px);
         min-height: 220px;
         justify-self: center;
         margin: 0 auto 4rem;
