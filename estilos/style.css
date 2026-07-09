@@ -233,9 +233,11 @@ a {
     border-radius: 14px;
     border: 8px solid #b14fb3;
     box-shadow: var(--shadow-soft);
-    background:
-        radial-gradient(circle at 30% 20%, rgba(255, 241, 141, 0.65), transparent 40%),
-        linear-gradient(135deg, #9d6b49, #e8b8a2 54%, #f1d9ca);
+    background-color: #ead8d1;
+    background-image: url('../img/rosa_img.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .about-content h2 {
@@ -462,7 +464,7 @@ a {
         justify-self: center;
         margin: 0 auto 4rem;
         border-left: 0;
-        background-position: center -1%;
+        background-position: center -21%;
         background-size: cover;
         /* Recorta la parte inferior con un arco para acompanar la ola rosa */
         clip-path: polygon(
