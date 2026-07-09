@@ -617,12 +617,12 @@ a {
 .contact-map-section {
     display: grid;
     place-items: center;
-    margin-top: 1.2rem;
+    margin-top: 1.8rem;
 }
 
 .contact-map-card {
     width: min(100%, 760px);
-    padding: 1.6rem 1.8rem;
+    padding: 2rem 2rem 2.1rem;
 }
 
 .contact-map-card h2 {
@@ -631,7 +631,7 @@ a {
 
 .contact-map-text {
     margin-top: 0;
-    margin-bottom: 0.95rem;
+    margin-bottom: 1.25rem;
 }
 
 .contact-map-frame-wrap {
@@ -650,7 +650,7 @@ a {
 
 .contact-map-button {
     display: inline-flex;
-    margin: 0.95rem auto 0;
+    margin: 1.2rem auto 0;
     padding: 0.85rem 1.5rem;
     border-radius: 999px;
     font-size: 1rem;
@@ -877,7 +877,7 @@ a {
     }
 
     .contact-map-card {
-        padding: 1.15rem;
+        padding: 1.35rem 1.25rem 1.45rem;
     }
 
     .contact-map-frame {
