@@ -206,6 +206,21 @@ a {
     font-size: 1.25rem;
 }
 
+.hero-image {
+    align-self: center;
+    justify-self: center;
+    width: min(86%, 360px);
+    aspect-ratio: 354 / 290;
+    margin: 2rem 0 4rem;
+    background-color: transparent;
+    background-image: url('../img/portada-tras.png?v=20260709-cache17');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: none;
+    border: 0;
+}
+
 .about {
     margin-top: 3.4rem;
     padding: 3.2rem 0 2.4rem;
@@ -445,6 +460,11 @@ a {
 
     .btn-whatsapp {
         margin-inline: auto;
+    }
+
+    .hero-image {
+        width: min(84%, 340px);
+        margin: 1.5rem 0 4rem;
     }
 
     .hero-wave {
