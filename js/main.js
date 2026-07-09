@@ -38,7 +38,7 @@ if (contactForm instanceof HTMLFormElement) {
 		const phone = phoneInput instanceof HTMLInputElement ? phoneInput.value.trim() : '';
 		const message = messageInput instanceof HTMLTextAreaElement ? messageInput.value.trim() : '';
 
-		const subject = encodeURIComponent('Solicitud de cita - Armonia Plena');
+		const subject = encodeURIComponent('Solicitud de primera cita');
 		const body = encodeURIComponent(
 			'Nombre: ' + name + '\n' +
 			'Email: ' + email + '\n' +
