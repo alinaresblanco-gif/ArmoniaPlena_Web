@@ -209,11 +209,11 @@ a {
 }
 
 .hero-page-title {
-    min-height: 320px;
+    min-height: 560px;
 }
 
 .hero-page-title .hero-inner {
-    min-height: 320px;
+    min-height: 560px;
     display: flex;
     align-items: center;
     justify-content: center;
