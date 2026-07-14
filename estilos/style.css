@@ -366,7 +366,7 @@ a {
     background-image: url('../img/rosa_img.png?v=20260709-cache17');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .about-content h2 {
