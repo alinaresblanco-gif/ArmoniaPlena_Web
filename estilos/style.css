@@ -361,8 +361,9 @@ a {
 .about-photo {
     min-height: 320px;
     border-radius: 14px;
-    border: 8px solid #b14fb3;
+    border: 5px solid #b14fb3;
     box-shadow: var(--shadow-soft);
+    background-color: #fff;
     background-image: url('../img/rosa_img.png?v=20260709-cache17');
     background-position: center;
     background-repeat: no-repeat;
