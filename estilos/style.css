@@ -939,6 +939,7 @@ a {
 
     .hero-corner-logo {
         width: clamp(96px, 24vw, 144px);
+        display: none;
     }
 
     .hero-page-title,
