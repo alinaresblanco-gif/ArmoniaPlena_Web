@@ -300,6 +300,7 @@ a {
     width: min(41.6vw, 576px);
     max-width: 576px;
     margin: 0 15px 0 0;
+    transform: translateX(100px);
 }
 
 .about {
@@ -956,6 +957,7 @@ a {
         width: min(84%, 340px);
         max-width: none;
         margin: 1.5rem 0 4rem;
+        transform: none;
     }
 
     .hero-wave {
