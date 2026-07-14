@@ -298,10 +298,9 @@ a {
 #inicio .hero-content h1 {
     margin: 0;
     max-width: calc(100% - 30px);
-    font-size: clamp(2.4rem, 4.3vw, 5.8rem);
+    font-size: clamp(1.9rem, 3.2vw, 4.2rem);
     line-height: 1.06;
-    white-space: normal;
-    text-wrap: balance;
+    white-space: nowrap;
 }
 
 #inicio .hero-content p {
