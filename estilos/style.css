@@ -384,6 +384,7 @@ a {
     line-height: 1.8;
     font-size: 1.392rem;
     color: #595959;
+    text-align: justify;
 }
 
 .services {
