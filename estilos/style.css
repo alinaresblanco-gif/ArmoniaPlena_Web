@@ -982,6 +982,7 @@ a {
     #inicio .hero-content p {
         margin: 1rem auto 2rem;
         margin-left: 0;
+        width: 100%;
         font-size: 1.05rem;
         text-align: center;
         align-self: center;
@@ -1030,9 +1031,11 @@ a {
     }
 
     #inicio .hero-image {
+        align-self: center;
+        justify-self: center;
         width: min(84%, 340px);
         max-width: none;
-        margin: 1.5rem 0 4rem;
+        margin: 1.5rem auto 4rem;
         transform: none;
     }
 
