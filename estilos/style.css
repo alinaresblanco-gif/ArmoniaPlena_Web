@@ -299,7 +299,7 @@ a {
     min-height: 505px;
     width: calc(100% - (325px - max(1rem, (100vw - 1220px) / 2)));
     margin-left: calc(325px - max(1rem, (100vw - 1220px) / 2));
-    padding: 90px 15px 0 0;
+    padding: 140px 15px 0 0;
     text-align: left;
     display: flex;
     flex-direction: column;
