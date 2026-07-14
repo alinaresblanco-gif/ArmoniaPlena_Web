@@ -302,7 +302,7 @@ a {
     height: min(44vw, 613px);
     aspect-ratio: auto;
     margin: 0 15px 0 0;
-    transform: translate(670px, 7px);
+    transform: translate(670px, 3px);
 }
 
 .about {
