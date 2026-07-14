@@ -295,6 +295,24 @@ a {
     justify-content: center;
 }
 
+#inicio .hero-content h1 {
+    margin: 0;
+    font-size: clamp(2rem, 3.4vw, 4.6rem);
+    line-height: 1.06;
+    white-space: nowrap;
+}
+
+#inicio .hero-content p {
+    margin: 0.8rem 0 1.15rem;
+    font-size: clamp(1rem, 1.5vw, 1.8rem);
+    font-weight: 600;
+    text-align: center;
+}
+
+#inicio .hero-content .btn-whatsapp {
+    margin-top: 0;
+}
+
 #inicio .hero-image {
     align-self: start;
     justify-self: end;
@@ -922,6 +940,11 @@ a {
     #inicio .hero-content {
         min-height: auto;
         padding: 2.8rem 0.5rem 1.5rem;
+    }
+
+    #inicio .hero-content h1 {
+        white-space: normal;
+        font-size: clamp(2.2rem, 9vw, 3.2rem);
     }
 
     .hero-content p {
