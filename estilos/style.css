@@ -359,7 +359,8 @@ a {
 }
 
 .about-photo {
-    min-height: 320px;
+    width: min(100%, 426px);
+    height: 320px;
     border-radius: 14px;
     border: 5px solid #b14fb3;
     box-shadow: var(--shadow-soft);
@@ -368,6 +369,7 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    justify-self: center;
 }
 
 .about-content h2 {
@@ -1054,7 +1056,8 @@ a {
     }
 
     .about-photo {
-        min-height: 280px;
+        width: min(100%, 373px);
+        height: 280px;
     }
 
     .services-grid {
