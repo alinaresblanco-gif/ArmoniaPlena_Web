@@ -328,6 +328,8 @@ a {
 
 #inicio .hero-content .btn-whatsapp {
     margin-top: 0;
+    padding: 1.425rem 2.7rem;
+    font-size: 1.875rem;
 }
 
 #inicio .hero-image {
