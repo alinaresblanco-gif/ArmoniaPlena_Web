@@ -165,7 +165,7 @@ a {
     top: 20px;
     left: 20px;
     z-index: 3;
-    width: clamp(72px, 8vw, 120px);
+    width: clamp(144px, 16vw, 240px);
     height: auto;
     object-fit: contain;
 }
@@ -927,7 +927,7 @@ a {
     }
 
     .hero-corner-logo {
-        width: clamp(64px, 18vw, 88px);
+        width: clamp(96px, 24vw, 144px);
     }
 
     .hero-page-title,
