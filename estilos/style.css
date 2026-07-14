@@ -320,8 +320,9 @@ a {
     margin: 0.8rem 0 1.15rem;
     font-size: 50px;
     font-weight: 600;
-    align-self: center;
-    text-align: center;
+    align-self: flex-start;
+    margin-left: 125px;
+    text-align: left;
     white-space: nowrap;
 }
 
