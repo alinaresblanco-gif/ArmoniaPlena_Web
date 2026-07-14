@@ -354,15 +354,15 @@ a {
 .about-inner {
     display: grid;
     grid-template-columns: 0.95fr 1.05fr;
-    gap: 2rem;
+    gap: 2.4rem;
     align-items: center;
 }
 
 .about-photo {
-    width: min(100%, 426px);
-    height: 320px;
-    border-radius: 14px;
-    border: 5px solid #b14fb3;
+    width: min(100%, 511px);
+    height: 384px;
+    border-radius: 17px;
+    border: 6px solid #b14fb3;
     box-shadow: var(--shadow-soft);
     background-color: #fff;
     background-image: url('../img/rosa_img.png?v=20260709-cache17');
@@ -375,14 +375,14 @@ a {
 .about-content h2 {
     margin: 0;
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: clamp(2.2rem, 4vw, 4rem);
+    font-size: clamp(2.64rem, 4.8vw, 4.8rem);
     color: #a44dae;
 }
 
 .about-content p {
     margin: 1rem 0 0;
     line-height: 1.8;
-    font-size: 1.16rem;
+    font-size: 1.392rem;
     color: #595959;
 }
 
