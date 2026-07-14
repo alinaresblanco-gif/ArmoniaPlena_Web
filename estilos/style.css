@@ -332,6 +332,7 @@ a {
     margin-left: 255px;
     padding: 1.425rem 2.7rem;
     font-size: 1.875rem;
+    white-space: nowrap;
 }
 
 #inicio .hero-image {
