@@ -322,6 +322,7 @@ a {
     font-weight: 600;
     align-self: center;
     text-align: center;
+    white-space: nowrap;
 }
 
 #inicio .hero-content .btn-whatsapp {
