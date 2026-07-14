@@ -297,7 +297,9 @@ a {
 
 #inicio .hero-content {
     min-height: 505px;
-    padding: 20px 15px 0 280px;
+    width: calc(100% - 280px);
+    margin-left: 280px;
+    padding: 20px 15px 0 0;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -955,6 +957,8 @@ a {
 
     #inicio .hero-content {
         min-height: auto;
+        width: 100%;
+        margin-left: 0;
         padding: 2.8rem 0.5rem 1.5rem;
         text-align: center;
         align-items: center;
