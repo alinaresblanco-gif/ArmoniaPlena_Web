@@ -161,10 +161,13 @@ a {
 }
 
 .hero-corner-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 3;
     width: clamp(144px, 16vw, 240px);
     height: auto;
     object-fit: contain;
-    flex: 0 0 auto;
 }
 
 .hero-inner {
@@ -294,7 +297,7 @@ a {
 
 #inicio .hero-content {
     min-height: 505px;
-    padding: 20px 15px 0 20px;
+    padding: 20px 15px 0 calc(20px + clamp(144px, 16vw, 240px) + 20px);
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -302,16 +305,9 @@ a {
     justify-content: flex-start;
 }
 
-#inicio .hero-head {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    width: 100%;
-}
-
 #inicio .hero-content h1 {
     margin: 0;
-    max-width: calc(100% - clamp(144px, 16vw, 240px) - 20px);
+    max-width: 100%;
     font-size: clamp(1.9rem, 3.2vw, 4.2rem);
     line-height: 1.06;
     white-space: nowrap;
@@ -963,16 +959,6 @@ a {
         text-align: center;
         align-items: center;
         justify-content: center;
-    }
-
-    #inicio .hero-head {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.8rem;
-    }
-
-    #inicio .hero-content h1 {
-        max-width: 100%;
     }
 
     #inicio .hero-content h1 {
