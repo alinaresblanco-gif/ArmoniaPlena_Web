@@ -278,7 +278,7 @@ a {
 
 #inicio .hero-inner {
     min-height: 560px;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 576px);
     align-items: start;
     column-gap: 1rem;
     padding: 15px 15px 0 0;
@@ -297,9 +297,9 @@ a {
 #inicio .hero-image {
     align-self: start;
     justify-self: end;
-    width: min(52vw, 720px);
-    max-width: calc(100vw - 30px);
-    margin: 0;
+    width: min(41.6vw, 576px);
+    max-width: 576px;
+    margin: 0 15px 0 0;
 }
 
 .about {
