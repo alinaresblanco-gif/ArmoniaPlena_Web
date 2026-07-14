@@ -978,6 +978,24 @@ a {
         font-size: clamp(2.2rem, 9vw, 3.2rem);
     }
 
+    #inicio .hero-content p {
+        margin: 1rem auto 2rem;
+        margin-left: 0;
+        font-size: 1.05rem;
+        text-align: center;
+        align-self: center;
+        white-space: normal;
+    }
+
+    #inicio .hero-content .btn-whatsapp {
+        align-self: center;
+        margin-top: 0;
+        margin-left: 0;
+        padding: 0.95rem 1.8rem;
+        font-size: 1.25rem;
+        white-space: normal;
+    }
+
     .hero-content p {
         margin-inline: auto;
     }
@@ -1067,12 +1085,6 @@ a {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-
-@media (max-width: 480px) {
-    .contact-social-grid {
-        grid-template-columns: 1fr;
-    }
-}
     .contact-submit {
         width: 100%;
     }
@@ -1084,6 +1096,12 @@ a {
     .footer-brand-text small {
         font-size: 0.68rem;
         letter-spacing: 0.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-social-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -1132,8 +1150,18 @@ a {
         font-size: 1.05rem;
     }
 
+    #inicio .hero-content p {
+        font-size: 1.05rem;
+    }
+
     .btn-whatsapp,
     .btn-whatsapp-large {
+        width: 100%;
+        font-size: 1rem;
+        padding-inline: 1rem;
+    }
+
+    #inicio .hero-content .btn-whatsapp {
         width: 100%;
         font-size: 1rem;
         padding-inline: 1rem;
