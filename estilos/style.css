@@ -160,6 +160,16 @@ a {
     background: transparent;
 }
 
+.hero-corner-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 3;
+    width: clamp(72px, 8vw, 120px);
+    height: auto;
+    object-fit: contain;
+}
+
 .hero-inner {
     position: relative;
     z-index: 2;
@@ -914,6 +924,10 @@ a {
 
     .hero {
         min-height: auto;
+    }
+
+    .hero-corner-logo {
+        width: clamp(64px, 18vw, 88px);
     }
 
     .hero-page-title,
