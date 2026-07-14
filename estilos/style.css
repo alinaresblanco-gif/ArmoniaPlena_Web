@@ -297,7 +297,7 @@ a {
 
 #inicio .hero-content {
     min-height: 505px;
-    padding: 20px 15px 0 calc(clamp(144px, 16vw, 240px) + 40px);
+    padding: 20px 15px 0 calc(20px + clamp(144px, 16vw, 240px) + 20px);
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -311,6 +311,7 @@ a {
     font-size: clamp(1.9rem, 3.2vw, 4.2rem);
     line-height: 1.06;
     white-space: nowrap;
+    text-transform: uppercase;
 }
 
 #inicio .hero-content p {
