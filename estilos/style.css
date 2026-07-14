@@ -297,8 +297,8 @@ a {
 #inicio .hero-image {
     align-self: start;
     justify-self: end;
-    width: min(41.6vw, 576px);
-    max-width: 576px;
+    width: min(54.08vw, 749px);
+    max-width: 749px;
     margin: 0 15px 0 0;
     transform: translate(670px, 15px);
 }
