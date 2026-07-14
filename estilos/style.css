@@ -320,7 +320,8 @@ a {
     margin: 0.8rem 0 1.15rem;
     font-size: clamp(1rem, 1.5vw, 1.8rem);
     font-weight: 600;
-    text-align: left;
+    align-self: center;
+    text-align: center;
 }
 
 #inicio .hero-content .btn-whatsapp {
