@@ -303,6 +303,20 @@ a {
     aspect-ratio: auto;
     margin: 0 15px 0 0;
     transform: translate(670px, 3px);
+    position: relative;
+    overflow: hidden;
+}
+
+#inicio .hero-image::after {
+    content: '';
+    position: absolute;
+    left: -4%;
+    right: -4%;
+    bottom: -16px;
+    height: 34px;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    background: #b56bc0;
+    pointer-events: none;
 }
 
 .about {
@@ -960,6 +974,10 @@ a {
         max-width: none;
         margin: 1.5rem 0 4rem;
         transform: none;
+    }
+
+    #inicio .hero-image::after {
+        display: none;
     }
 
     .hero-wave {
