@@ -1557,12 +1557,12 @@ a {
     }
 
     #inicio .hero-image {
-        width: 224px;
-        max-width: 224px;
-        height: 154px;
-        margin-bottom: 0.95rem;
-        align-self: center;
-        justify-self: center;
+        width: 112px;
+        max-width: 112px;
+        height: 77px;
+        margin: 20px 20px 0 0;
+        align-self: start;
+        justify-self: end;
         transform: none;
     }
 
