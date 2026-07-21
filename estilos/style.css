@@ -550,6 +550,31 @@ a {
     color: #585858;
 }
 
+.profile-card {
+    overflow: auto;
+}
+
+.profile-card .profile-photo {
+    float: right;
+    width: clamp(250px, 34vw, 430px);
+    height: auto;
+    margin: 0.2rem 0 1.2rem 1.35rem;
+    border-radius: 14px;
+    border: 1px solid rgba(159, 74, 167, 0.16);
+    box-shadow: 0 12px 26px rgba(123, 86, 145, 0.14);
+}
+
+.profile-card h3 {
+    margin: 1rem 0 0;
+    font-size: clamp(1.05rem, 1.7vw, 1.35rem);
+    color: #8f3395;
+    font-weight: 700;
+}
+
+.profile-card p {
+    text-align: justify;
+}
+
 .service-list {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1390,6 +1415,17 @@ a {
 
     .contact-submit {
         width: 100%;
+    }
+
+    .profile-card .profile-photo {
+        float: none;
+        display: block;
+        width: min(100%, 390px);
+        margin: 0.85rem auto 1rem;
+    }
+
+    .profile-card p {
+        text-align: left;
     }
 
     .footer-branding {
