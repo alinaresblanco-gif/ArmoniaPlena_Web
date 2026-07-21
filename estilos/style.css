@@ -1457,32 +1457,32 @@ a {
 
 @media (min-width: 701px) {
     .header-wrap {
-        min-height: 21px;
+        min-height: 53px;
     }
 
     .brand-logo {
-        width: 16px;
-        height: 16px;
+        width: 40px;
+        height: 40px;
     }
 
     .brand-text strong {
-        font-size: clamp(0.45rem, 0.69vw, 0.65rem);
+        font-size: clamp(1.13rem, 1.72vw, 1.63rem);
     }
 
     .brand-text small {
-        font-size: 0.19rem;
+        font-size: 0.47rem;
     }
 
     .site-nav {
-        gap: 0.78rem;
+        gap: 1.96rem;
     }
 
     .site-nav a {
-        font-size: 0.31rem;
+        font-size: 0.78rem;
     }
 
     .cta-mini {
-        padding: 0.14rem 0.31rem;
+        padding: 0.35rem 0.78rem;
     }
 
     .hero {
