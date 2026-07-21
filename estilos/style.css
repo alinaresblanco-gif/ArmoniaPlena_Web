@@ -1546,12 +1546,13 @@ a {
     }
 
     #inicio .hero-content p {
-        font-size: 0.62rem;
+        width: 100%;
+        font-size: 1.24rem;
         margin: 0.3rem 0 0.42rem;
         margin-left: 0;
-        text-align: left;
-        align-self: flex-start;
-        white-space: normal;
+        text-align: center;
+        align-self: center;
+        white-space: nowrap;
     }
 
     #inicio .hero-content .btn-whatsapp {
