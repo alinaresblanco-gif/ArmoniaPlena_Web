@@ -1921,3 +1921,9 @@ a {
         font-size: 0.64rem;
     }
 }
+
+    /* Mantiene el mismo tamano para el titulo principal y subtitulos en Conoceme */
+    .profile-card h2,
+    .profile-card h3 {
+        font-size: clamp(1.05rem, 1.7vw, 1.35rem);
+    }
