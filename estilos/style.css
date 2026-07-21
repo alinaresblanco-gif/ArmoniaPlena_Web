@@ -1456,20 +1456,6 @@ a {
 }
 
 @media (min-width: 701px) {
-    html,
-    body {
-        width: 100%;
-        overflow-x: hidden;
-    }
-
-    body {
-        min-height: 100dvh;
-    }
-
-    main {
-        width: 100%;
-    }
-
     .header-wrap {
         min-height: 34px;
     }
@@ -1500,7 +1486,7 @@ a {
     }
 
     .hero {
-        min-height: calc(100dvh - 34px);
+        min-height: clamp(240px, 24vw, 300px);
     }
 
     .hero-corner-logo {
@@ -1511,7 +1497,7 @@ a {
 
     .hero-page-title,
     .hero-page-title .hero-inner {
-        min-height: clamp(220px, 62dvh, 520px);
+        min-height: clamp(170px, 19vw, 220px);
     }
 
     .hero-title-logo {
@@ -1532,7 +1518,7 @@ a {
     }
 
     #inicio .hero-inner {
-        min-height: calc(100dvh - 34px);
+        min-height: clamp(210px, 22vw, 260px);
     }
 
     #inicio .hero-content {
