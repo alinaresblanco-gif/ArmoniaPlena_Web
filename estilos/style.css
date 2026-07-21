@@ -1519,7 +1519,7 @@ a {
 
     #inicio .hero-inner {
         min-height: 260px;
-        grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+        grid-template-columns: minmax(0, calc(100% - 367px)) 367px;
         align-items: center;
         padding: 0;
         row-gap: 0;
@@ -1527,8 +1527,8 @@ a {
 
     #inicio .hero-content {
         min-height: 210px;
-        width: calc(100% - 367px);
-        max-width: calc(100% - 367px);
+        width: 100%;
+        max-width: none;
         margin-left: 0;
         padding-top: 1.2rem;
         text-align: left;
@@ -1539,9 +1539,10 @@ a {
     #inicio .hero-content h1 {
         width: 100%;
         margin: 0 auto;
-        font-size: 1.84rem;
+        font-size: 2.76rem;
         line-height: 1.06;
         text-align: center;
+        white-space: nowrap;
     }
 
     #inicio .hero-content p {
