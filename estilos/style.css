@@ -209,11 +209,11 @@ a {
 }
 
 .hero-page-title {
-    min-height: 560px;
+    min-height: clamp(360px, 46vw, 560px);
 }
 
 .hero-page-title .hero-inner {
-    min-height: 560px;
+    min-height: clamp(360px, 46vw, 560px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -288,18 +288,19 @@ a {
 }
 
 #inicio .hero-inner {
-    min-height: 560px;
-    grid-template-columns: minmax(0, 1fr) minmax(360px, 980px);
+    min-height: clamp(410px, 44vw, 560px);
+    grid-template-columns: minmax(0, 1fr) minmax(340px, 820px);
     align-items: start;
-    column-gap: 1rem;
-    padding: 15px 15px 0 0;
+    column-gap: clamp(0.75rem, 1.8vw, 1.4rem);
+    padding: clamp(0.25rem, 1vw, 0.9rem) 0.9rem 0 0;
 }
 
 #inicio .hero-content {
-    min-height: 505px;
-    width: calc(100% - (325px - max(1rem, (100vw - 1220px) / 2)));
-    margin-left: calc(325px - max(1rem, (100vw - 1220px) / 2));
-    padding: 140px 15px 0 0;
+    min-height: clamp(390px, 40vw, 505px);
+    width: 100%;
+    max-width: 840px;
+    margin-left: clamp(1rem, 8vw, 10.8rem);
+    padding: clamp(4.6rem, 8.2vw, 8.75rem) 0 0;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -317,33 +318,33 @@ a {
 }
 
 #inicio .hero-content p {
-    margin: 0.8rem 0 1.15rem;
-    font-size: 50px;
+    margin: 0.7rem 0 1rem;
+    font-size: clamp(1.4rem, 2.9vw, 2.9rem);
     font-weight: 600;
     align-self: flex-start;
-    margin-left: 155px;
+    margin-left: clamp(0rem, 5vw, 8.2rem);
     text-align: left;
     white-space: nowrap;
 }
 
 #inicio .hero-content .btn-whatsapp {
     align-self: flex-start;
-    margin-top: 50px;
-    margin-left: 315px;
-    padding: 1.425rem 2.7rem;
-    font-size: 1.875rem;
+    margin-top: clamp(1rem, 2.5vw, 3rem);
+    margin-left: clamp(0rem, 10.2vw, 14.6rem);
+    padding: clamp(0.95rem, 1.8vw, 1.35rem) clamp(1.4rem, 2.6vw, 2.3rem);
+    font-size: clamp(1.05rem, 2.1vw, 1.6rem);
     white-space: nowrap;
 }
 
 #inicio .hero-image {
     align-self: start;
     justify-self: end;
-    width: min(68vw, 980px);
-    max-width: 980px;
-    height: min(44vw, 613px);
+    width: min(60vw, 900px);
+    max-width: 900px;
+    height: min(41vw, 560px);
     aspect-ratio: auto;
-    margin: 0 15px 0 0;
-    transform: translate(670px, 3px);
+    margin: 0 0.6rem 0 0;
+    transform: translate(clamp(80px, 12vw, 240px), 3px);
 }
 
 .about {
@@ -851,9 +852,63 @@ a {
     display: block;
 }
 
+@media (max-width: 1440px) {
+    #inicio .hero-content {
+        margin-left: clamp(1rem, 6.2vw, 6.6rem);
+    }
+
+    #inicio .hero-content p {
+        margin-left: clamp(0rem, 4.1vw, 4.9rem);
+    }
+
+    #inicio .hero-content .btn-whatsapp {
+        margin-left: clamp(0rem, 8.2vw, 9.4rem);
+    }
+
+    #inicio .hero-image {
+        transform: translate(clamp(56px, 9vw, 150px), 4px);
+    }
+}
+
 @media (max-width: 1220px) {
     .site-nav a {
         font-size: 1rem;
+    }
+
+    .hero-page-title,
+    .hero-page-title .hero-inner {
+        min-height: clamp(320px, 50vw, 470px);
+    }
+
+    #inicio .hero-inner {
+        grid-template-columns: minmax(0, 1fr) minmax(280px, 640px);
+        min-height: clamp(390px, 48vw, 520px);
+    }
+
+    #inicio .hero-content {
+        margin-left: clamp(0.85rem, 3.8vw, 2.4rem);
+        padding-top: clamp(3.4rem, 7.6vw, 6.2rem);
+    }
+
+    #inicio .hero-content h1 {
+        white-space: normal;
+        font-size: clamp(1.85rem, 3.9vw, 3.2rem);
+    }
+
+    #inicio .hero-content p {
+        margin-left: clamp(0rem, 2.4vw, 1.9rem);
+        font-size: clamp(1.15rem, 2.7vw, 2rem);
+    }
+
+    #inicio .hero-content .btn-whatsapp {
+        margin-left: clamp(0rem, 5.8vw, 4.7rem);
+        margin-top: clamp(0.8rem, 1.8vw, 1.5rem);
+    }
+
+    #inicio .hero-image {
+        width: min(56vw, 700px);
+        height: min(40vw, 470px);
+        transform: translate(clamp(22px, 4.8vw, 70px), 5px);
     }
 
     .services-grid {
@@ -868,6 +923,55 @@ a {
 
     .service-item h3 {
         font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 701px) {
+    #inicio .hero-inner {
+        min-height: auto;
+        grid-template-columns: 1fr;
+        padding: 0;
+        row-gap: 0;
+    }
+
+    #inicio .hero-content {
+        min-height: auto;
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 4.1rem 1rem 1rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #inicio .hero-content h1 {
+        white-space: normal;
+        font-size: clamp(2rem, 5.6vw, 3.15rem);
+    }
+
+    #inicio .hero-content p {
+        margin: 0.9rem auto 1.45rem;
+        margin-left: 0;
+        font-size: clamp(1.15rem, 2.9vw, 1.6rem);
+        text-align: center;
+        align-self: center;
+    }
+
+    #inicio .hero-content .btn-whatsapp {
+        align-self: center;
+        margin: 0 auto;
+        padding: 1rem 1.9rem;
+        font-size: clamp(1.05rem, 2vw, 1.35rem);
+    }
+
+    #inicio .hero-image {
+        align-self: center;
+        justify-self: center;
+        width: min(84%, 560px);
+        max-width: none;
+        height: min(52vw, 380px);
+        margin: 1.2rem auto 3.3rem;
+        transform: none;
     }
 }
 
