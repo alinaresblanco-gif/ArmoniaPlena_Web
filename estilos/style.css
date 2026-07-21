@@ -1560,10 +1560,10 @@ a {
         width: 353px;
         max-width: 353px;
         height: 244px;
-        margin: 20px 5px 0 0;
+        margin: 20px 0 0 0;
         align-self: start;
         justify-self: end;
-        transform: none;
+        transform: translateX(14px);
     }
 
     .about {
