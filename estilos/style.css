@@ -1557,6 +1557,10 @@ a {
         width: 94px;
     }
 
+    .hero-contact .hero-content {
+        transform: translateY(12px);
+    }
+
     .hero-content h1 {
         font-size: 1rem;
     }
