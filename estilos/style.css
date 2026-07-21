@@ -1490,7 +1490,7 @@ a {
     }
 
     .hero-corner-logo {
-        width: clamp(40px, 3.5vw, 58px);
+        width: clamp(80px, 7vw, 116px);
         top: 10px;
         left: 10px;
     }
