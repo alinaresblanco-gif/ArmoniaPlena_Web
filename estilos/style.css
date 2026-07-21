@@ -394,7 +394,7 @@ a {
     line-height: 1.8;
     font-size: 1.392rem;
     color: #595959;
-    text-align: justify !important;
+    text-align: justify;
 }
 
 .about-content .about-closing {
@@ -1334,7 +1334,7 @@ a {
     }
 
     .about-content p {
-        text-align: left !important;
+        text-align: left;
     }
 
     .about-content .about-closing {
