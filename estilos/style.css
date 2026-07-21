@@ -1538,8 +1538,8 @@ a {
         min-height: 300px;
     }
 
-    .hero-corner-logo {
-        width: 67px;
+    #inicio .hero-corner-logo {
+        width: 94px;
         top: 10px;
         left: 10px;
     }
@@ -1806,8 +1806,8 @@ a {
         min-height: auto;
     }
 
-    .hero-corner-logo {
-        width: 56px;
+    #inicio .hero-corner-logo {
+        width: 78px;
     }
 
     #inicio .hero-inner {
