@@ -1490,7 +1490,7 @@ a {
     }
 
     .hero-corner-logo {
-        width: clamp(56px, 4.9vw, 81px);
+        width: 67px;
         top: 10px;
         left: 10px;
     }
@@ -1501,7 +1501,7 @@ a {
     }
 
     .hero-title-logo {
-        width: clamp(34px, 2.7vw, 47px);
+        width: 47px;
     }
 
     .hero-content h1 {
