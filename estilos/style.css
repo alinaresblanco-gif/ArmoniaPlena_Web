@@ -1295,11 +1295,11 @@ a {
     }
 
     .hero-contact .hero-title-logo {
-        width: clamp(148px, 36vw, 216px);
+        width: clamp(74px, 18vw, 108px);
     }
 
     .hero-contact.hero-with-subtitle .hero-content {
-        transform: translateY(8px);
+        transform: translateY(-22px);
     }
 
     .hero-title-logo {
@@ -1446,7 +1446,7 @@ a {
     }
 
     .hero-contact.hero-with-subtitle .hero-content {
-        transform: translateY(6px);
+        transform: translateY(-20px);
     }
 
     .hero-title-logo {
@@ -1454,7 +1454,7 @@ a {
     }
 
     .hero-contact .hero-title-logo {
-        width: clamp(136px, 40vw, 188px);
+        width: clamp(68px, 20vw, 94px);
     }
 
     .hero-content p {
