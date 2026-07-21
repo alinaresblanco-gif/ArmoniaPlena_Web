@@ -1522,7 +1522,7 @@ a {
 
     .hero-page-title,
     .hero-page-title .hero-inner {
-        min-height: 220px;
+        min-height: 260px;
     }
 
     .hero-title-logo {
@@ -1671,6 +1671,11 @@ a {
         min-height: 340px;
     }
 
+    .hero-page-title,
+    .hero-page-title .hero-inner {
+        min-height: 300px;
+    }
+
     #inicio .hero-inner {
         min-height: 300px;
         grid-template-columns: minmax(0, calc(100% - 320px)) 320px;
@@ -1747,6 +1752,11 @@ a {
     }
 
     .hero {
+        min-height: auto;
+    }
+
+    .hero-page-title,
+    .hero-page-title .hero-inner {
         min-height: auto;
     }
 
