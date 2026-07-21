@@ -1527,7 +1527,8 @@ a {
 
     #inicio .hero-content {
         min-height: 210px;
-        max-width: 310px;
+        width: calc(100% - 367px);
+        max-width: calc(100% - 367px);
         margin-left: 0;
         padding-top: 1.2rem;
         text-align: left;
@@ -1536,7 +1537,11 @@ a {
     }
 
     #inicio .hero-content h1 {
-        font-size: 0.92rem;
+        width: 100%;
+        margin: 0 auto;
+        font-size: 1.84rem;
+        line-height: 1.06;
+        text-align: center;
     }
 
     #inicio .hero-content p {
