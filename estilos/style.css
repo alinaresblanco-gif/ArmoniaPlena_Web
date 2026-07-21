@@ -1562,7 +1562,7 @@ a {
     }
 
     .hero-contact.hero-with-subtitle .hero-content {
-        transform: translateY(6px);
+        transform: translateY(-8px);
     }
 
     .hero-contact.hero-with-subtitle .hero-content p {
