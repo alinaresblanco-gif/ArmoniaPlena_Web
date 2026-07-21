@@ -1637,3 +1637,200 @@ a {
         font-size: 0.64rem;
     }
 }
+
+/* Bloque final: mantiene el mismo tamano visual en escritorio segun resolucion */
+@media (min-width: 701px) {
+    :root {
+        --desktop-lock-scale: 0.5;
+    }
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        min-height: 100dvh;
+    }
+
+    .header-wrap {
+        min-height: calc(68px * var(--desktop-lock-scale));
+    }
+
+    .brand-logo {
+        width: calc(50px * var(--desktop-lock-scale));
+        height: calc(50px * var(--desktop-lock-scale));
+    }
+
+    .brand-text strong {
+        font-size: calc(2.1rem * var(--desktop-lock-scale));
+    }
+
+    .brand-text small {
+        font-size: calc(0.6rem * var(--desktop-lock-scale));
+    }
+
+    .site-nav {
+        gap: calc(2.5rem * var(--desktop-lock-scale));
+    }
+
+    .site-nav a {
+        font-size: calc(1rem * var(--desktop-lock-scale));
+    }
+
+    .cta-mini {
+        padding: calc(0.44rem * var(--desktop-lock-scale)) calc(1rem * var(--desktop-lock-scale));
+    }
+
+    .hero {
+        min-height: calc(100dvh - (68px * var(--desktop-lock-scale)));
+    }
+
+    #inicio .hero-inner {
+        min-height: calc(100dvh - (68px * var(--desktop-lock-scale)));
+        grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+        align-items: center;
+    }
+
+    #inicio .hero-content {
+        min-height: auto;
+        max-width: calc(620px * var(--desktop-lock-scale));
+        margin-left: calc(1.6rem * var(--desktop-lock-scale));
+        padding-top: calc(2.7rem * var(--desktop-lock-scale));
+    }
+
+    #inicio .hero-content h1 {
+        font-size: calc(2.05rem * var(--desktop-lock-scale));
+        line-height: 1.12;
+        white-space: normal;
+    }
+
+    #inicio .hero-content p {
+        font-size: calc(1.22rem * var(--desktop-lock-scale));
+        margin: calc(0.8rem * var(--desktop-lock-scale)) 0 calc(1rem * var(--desktop-lock-scale));
+        white-space: normal;
+    }
+
+    #inicio .hero-content .btn-whatsapp {
+        font-size: calc(1.06rem * var(--desktop-lock-scale));
+        padding: calc(0.84rem * var(--desktop-lock-scale)) calc(1.45rem * var(--desktop-lock-scale));
+    }
+
+    #inicio .hero-image {
+        width: min(100%, calc(450px * var(--desktop-lock-scale)));
+        max-width: calc(450px * var(--desktop-lock-scale));
+        height: min(24vw, calc(310px * var(--desktop-lock-scale)));
+        margin-bottom: calc(1.7rem * var(--desktop-lock-scale));
+    }
+
+    .hero-page-title,
+    .hero-page-title .hero-inner {
+        min-height: clamp(220px, 62dvh, 520px);
+    }
+
+    .hero-page-title .hero-content h1 {
+        font-size: calc(2.35rem * var(--desktop-lock-scale));
+    }
+
+    .hero-page-title.hero-with-subtitle .hero-content p {
+        font-size: calc(1.05rem * var(--desktop-lock-scale));
+    }
+
+    .about-content h2,
+    .services-title {
+        font-size: calc(2.8rem * var(--desktop-lock-scale));
+    }
+
+    .about-content p {
+        font-size: calc(1.02rem * var(--desktop-lock-scale));
+    }
+
+    .about-photo {
+        width: min(100%, calc(400px * var(--desktop-lock-scale)));
+        height: calc(300px * var(--desktop-lock-scale));
+    }
+
+    .service-item .icon {
+        width: calc(88px * var(--desktop-lock-scale));
+        height: calc(88px * var(--desktop-lock-scale));
+        font-size: calc(2rem * var(--desktop-lock-scale));
+    }
+
+    .service-item h3 {
+        font-size: calc(1.3rem * var(--desktop-lock-scale));
+    }
+
+    .btn-whatsapp-large {
+        font-size: calc(1.45rem * var(--desktop-lock-scale));
+        padding: calc(0.95rem * var(--desktop-lock-scale)) calc(2rem * var(--desktop-lock-scale));
+    }
+
+    .page-main {
+        padding: calc(2rem * var(--desktop-lock-scale)) 0 calc(2.8rem * var(--desktop-lock-scale));
+    }
+
+    .page-hero h1,
+    .content-card h2 {
+        font-size: calc(2rem * var(--desktop-lock-scale));
+    }
+
+    .content-card p,
+    .page-hero p {
+        font-size: calc(1rem * var(--desktop-lock-scale));
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1023px) {
+    :root {
+        --desktop-lock-scale: 0.56;
+    }
+
+    #inicio .hero-inner {
+        grid-template-columns: 1fr;
+    }
+
+    #inicio .hero-content {
+        max-width: min(92vw, 430px);
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+    }
+
+    #inicio .hero-content p,
+    #inicio .hero-content .btn-whatsapp {
+        align-self: center;
+        text-align: center;
+    }
+
+    #inicio .hero-image {
+        width: min(84%, 300px);
+        max-width: none;
+        height: min(34vw, 220px);
+        margin: 1rem auto 1.6rem;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    :root {
+        --desktop-lock-scale: 0.53;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1599px) {
+    :root {
+        --desktop-lock-scale: 0.5;
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+    :root {
+        --desktop-lock-scale: 0.48;
+    }
+}
+
+@media (min-width: 1920px) {
+    :root {
+        --desktop-lock-scale: 0.46;
+    }
+}
