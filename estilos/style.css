@@ -854,7 +854,7 @@ a {
 
 @media (min-width: 701px) {
     :root {
-        --desktop-ui-scale: 0.7;
+        --desktop-ui-scale: 0.49;
     }
 
     .header-wrap {
@@ -867,144 +867,144 @@ a {
     }
 
     .brand-text strong {
-        font-size: clamp(1.15rem, 2.1vw, 2.1rem);
+        font-size: clamp(0.9rem, 1.5vw, 1.45rem);
     }
 
     .brand-text small {
-        font-size: 0.58rem;
+        font-size: 0.42rem;
         letter-spacing: 0.11em;
     }
 
     .site-nav a {
-        font-size: 0.9rem;
+        font-size: 0.72rem;
     }
 
     .cta-mini {
-        padding: 0.4rem 0.95rem;
+        padding: 0.3rem 0.72rem;
     }
 
     .hero {
-        min-height: clamp(420px, 42vw, 560px);
+        min-height: clamp(330px, 34vw, 430px);
     }
 
     .hero-corner-logo {
-        width: clamp(76px, 7.2vw, 116px);
-        top: 16px;
-        left: 16px;
+        width: clamp(56px, 5vw, 82px);
+        top: 12px;
+        left: 12px;
     }
 
     .hero-page-title {
-        min-height: clamp(300px, 34vw, 420px);
+        min-height: clamp(230px, 26vw, 315px);
     }
 
     .hero-page-title .hero-inner {
-        min-height: clamp(300px, 34vw, 420px);
+        min-height: clamp(230px, 26vw, 315px);
     }
 
     .hero-title-logo {
-        width: clamp(66px, 5.5vw, 96px);
+        width: clamp(46px, 3.8vw, 68px);
     }
 
     .hero-content h1 {
-        font-size: clamp(2rem, 4.4vw, 3.55rem);
+        font-size: clamp(1.4rem, 3vw, 2.45rem);
     }
 
     .hero-content p {
-        font-size: clamp(1rem, 1.4vw, 1.4rem);
+        font-size: clamp(0.82rem, 1vw, 1.02rem);
     }
 
     .btn-whatsapp {
-        padding: 0.75rem 1.25rem;
-        font-size: 1rem;
+        padding: 0.58rem 0.95rem;
+        font-size: 0.76rem;
     }
 
     #inicio .hero-inner {
-        min-height: clamp(360px, 39vw, 500px);
+        min-height: clamp(290px, 31vw, 370px);
     }
 
     #inicio .hero-content {
-        min-height: clamp(300px, 34vw, 420px);
-        max-width: 620px;
-        padding-top: clamp(2rem, 3.8vw, 3.6rem);
+        min-height: clamp(230px, 24vw, 295px);
+        max-width: 440px;
+        padding-top: clamp(1.35rem, 2.6vw, 2.4rem);
     }
 
     #inicio .hero-content h1 {
-        font-size: clamp(1.4rem, 2.2vw, 2.45rem);
+        font-size: clamp(1.04rem, 1.55vw, 1.65rem);
     }
 
     #inicio .hero-content p {
-        font-size: clamp(0.92rem, 1.25vw, 1.22rem);
-        margin: 0.55rem 0 0.85rem;
+        font-size: clamp(0.74rem, 0.9vw, 0.9rem);
+        margin: 0.42rem 0 0.62rem;
     }
 
     #inicio .hero-content .btn-whatsapp {
-        font-size: clamp(0.92rem, 1.1vw, 1.08rem);
-        padding: 0.75rem 1.25rem;
+        font-size: clamp(0.72rem, 0.82vw, 0.8rem);
+        padding: 0.58rem 0.95rem;
     }
 
     #inicio .hero-image {
-        width: min(100%, 460px);
-        max-width: 460px;
-        height: min(28vw, 318px);
-        margin-bottom: 2rem;
+        width: min(100%, 320px);
+        max-width: 320px;
+        height: min(20vw, 220px);
+        margin-bottom: 1.35rem;
     }
 
     .about {
-        margin-top: 2.2rem;
-        padding: 2.4rem 0 2rem;
+        margin-top: 1.55rem;
+        padding: 1.7rem 0 1.4rem;
     }
 
     .about-content h2 {
-        font-size: clamp(1.8rem, 3vw, 3rem);
+        font-size: clamp(1.3rem, 2.2vw, 2.1rem);
     }
 
     .about-content p {
-        font-size: 1rem;
+        font-size: 0.76rem;
         line-height: 1.65;
     }
 
     .about-photo {
-        width: min(100%, 408px);
-        height: 308px;
+        width: min(100%, 286px);
+        height: 214px;
     }
 
     .services {
-        padding: 3.2rem 0 2.9rem;
+        padding: 2.2rem 0 2rem;
     }
 
     .services-title {
-        font-size: clamp(1.8rem, 3vw, 3rem);
+        font-size: clamp(1.25rem, 2vw, 2rem);
     }
 
     .service-item .icon {
-        width: 86px;
-        height: 86px;
-        font-size: 2rem;
+        width: 60px;
+        height: 60px;
+        font-size: 1.4rem;
     }
 
     .service-item h3 {
-        font-size: 1.3rem;
+        font-size: 0.92rem;
     }
 
     .btn-whatsapp-large {
-        font-size: clamp(1rem, 1.6vw, 1.5rem);
-        padding: 0.8rem 1.8rem;
+        font-size: clamp(0.74rem, 1.1vw, 1.02rem);
+        padding: 0.6rem 1.2rem;
     }
 
     .services-deco {
-        font-size: 13rem;
+        font-size: 9rem;
     }
 
     .page-main {
-        padding: 2.2rem 0 3rem;
+        padding: 1.6rem 0 2.1rem;
     }
 
     .page-hero h1 {
-        font-size: clamp(1.65rem, 2.7vw, 2.6rem);
+        font-size: clamp(1.2rem, 2vw, 1.8rem);
     }
 
     .content-card h2 {
-        font-size: clamp(1.45rem, 2.5vw, 2.1rem);
+        font-size: clamp(1.05rem, 1.75vw, 1.45rem);
     }
 }
 
