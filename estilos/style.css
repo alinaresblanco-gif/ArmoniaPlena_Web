@@ -1400,6 +1400,16 @@ a {
     }
 }
 
+@media (min-width: 701px) {
+    .about-content p {
+        text-align: justify;
+    }
+
+    .about-content .about-closing {
+        text-align: center;
+    }
+}
+
 @media (max-width: 480px) {
     .contact-social-grid {
         grid-template-columns: 1fr;
