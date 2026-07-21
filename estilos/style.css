@@ -1556,9 +1556,9 @@ a {
     }
 
     #inicio .hero-content .btn-whatsapp {
-        font-size: 0.56rem;
-        padding: 0.42rem 0.72rem;
-        align-self: flex-start;
+        font-size: 1.12rem;
+        padding: 0.84rem 1.44rem;
+        align-self: center;
         margin-left: 0;
         margin-top: 0;
     }
