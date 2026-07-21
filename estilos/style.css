@@ -852,6 +852,162 @@ a {
     display: block;
 }
 
+@media (min-width: 701px) {
+    :root {
+        --desktop-ui-scale: 0.7;
+    }
+
+    .header-wrap {
+        min-height: calc(100px * var(--desktop-ui-scale));
+    }
+
+    .brand-logo {
+        width: calc(74px * var(--desktop-ui-scale));
+        height: calc(74px * var(--desktop-ui-scale));
+    }
+
+    .brand-text strong {
+        font-size: clamp(1.15rem, 2.1vw, 2.1rem);
+    }
+
+    .brand-text small {
+        font-size: 0.58rem;
+        letter-spacing: 0.11em;
+    }
+
+    .site-nav a {
+        font-size: 0.9rem;
+    }
+
+    .cta-mini {
+        padding: 0.4rem 0.95rem;
+    }
+
+    .hero {
+        min-height: clamp(420px, 42vw, 560px);
+    }
+
+    .hero-corner-logo {
+        width: clamp(76px, 7.2vw, 116px);
+        top: 16px;
+        left: 16px;
+    }
+
+    .hero-page-title {
+        min-height: clamp(300px, 34vw, 420px);
+    }
+
+    .hero-page-title .hero-inner {
+        min-height: clamp(300px, 34vw, 420px);
+    }
+
+    .hero-title-logo {
+        width: clamp(66px, 5.5vw, 96px);
+    }
+
+    .hero-content h1 {
+        font-size: clamp(2rem, 4.4vw, 3.55rem);
+    }
+
+    .hero-content p {
+        font-size: clamp(1rem, 1.4vw, 1.4rem);
+    }
+
+    .btn-whatsapp {
+        padding: 0.75rem 1.25rem;
+        font-size: 1rem;
+    }
+
+    #inicio .hero-inner {
+        min-height: clamp(360px, 39vw, 500px);
+    }
+
+    #inicio .hero-content {
+        min-height: clamp(300px, 34vw, 420px);
+        max-width: 620px;
+        padding-top: clamp(2rem, 3.8vw, 3.6rem);
+    }
+
+    #inicio .hero-content h1 {
+        font-size: clamp(1.4rem, 2.2vw, 2.45rem);
+    }
+
+    #inicio .hero-content p {
+        font-size: clamp(0.92rem, 1.25vw, 1.22rem);
+        margin: 0.55rem 0 0.85rem;
+    }
+
+    #inicio .hero-content .btn-whatsapp {
+        font-size: clamp(0.92rem, 1.1vw, 1.08rem);
+        padding: 0.75rem 1.25rem;
+    }
+
+    #inicio .hero-image {
+        width: min(100%, 460px);
+        max-width: 460px;
+        height: min(28vw, 318px);
+        margin-bottom: 2rem;
+    }
+
+    .about {
+        margin-top: 2.2rem;
+        padding: 2.4rem 0 2rem;
+    }
+
+    .about-content h2 {
+        font-size: clamp(1.8rem, 3vw, 3rem);
+    }
+
+    .about-content p {
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+
+    .about-photo {
+        width: min(100%, 408px);
+        height: 308px;
+    }
+
+    .services {
+        padding: 3.2rem 0 2.9rem;
+    }
+
+    .services-title {
+        font-size: clamp(1.8rem, 3vw, 3rem);
+    }
+
+    .service-item .icon {
+        width: 86px;
+        height: 86px;
+        font-size: 2rem;
+    }
+
+    .service-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .btn-whatsapp-large {
+        font-size: clamp(1rem, 1.6vw, 1.5rem);
+        padding: 0.8rem 1.8rem;
+    }
+
+    .services-deco {
+        font-size: 13rem;
+    }
+
+    .page-main {
+        padding: 2.2rem 0 3rem;
+    }
+
+    .page-hero h1 {
+        font-size: clamp(1.65rem, 2.7vw, 2.6rem);
+    }
+
+    .content-card h2 {
+        font-size: clamp(1.45rem, 2.5vw, 2.1rem);
+    }
+}
+
 @media (max-width: 1440px) {
     #inicio .hero-content {
         margin-left: clamp(0.75rem, 3vw, 2.7rem);
