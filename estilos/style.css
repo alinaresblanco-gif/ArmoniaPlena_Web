@@ -1601,7 +1601,7 @@ a {
     }
 
     .services-title {
-        font-size: clamp(0.9rem, 1.3vw, 1.4rem);
+        font-size: clamp(1.35rem, 2.1vw, 2.18rem);
     }
 
     .service-item .icon {
