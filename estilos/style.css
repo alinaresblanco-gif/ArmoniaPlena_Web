@@ -564,11 +564,13 @@ a {
     box-shadow: 0 12px 26px rgba(123, 86, 145, 0.14);
 }
 
+.profile-card h2,
 .profile-card h3 {
     margin: 1rem 0 0;
     font-size: clamp(1.05rem, 1.7vw, 1.35rem);
     color: #8f3395;
     font-weight: 700;
+    font-family: inherit;
 }
 
 .profile-card p {
