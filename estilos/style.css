@@ -359,8 +359,8 @@ a {
 
 .about-inner {
     display: grid;
-    grid-template-columns: minmax(0, 510px) minmax(0, 1fr);
-    gap: clamp(0.7rem, 1.4vw, 1.4rem);
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 2.4rem;
     align-items: center;
 }
 
@@ -375,11 +375,7 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    justify-self: end;
-}
-
-.about-content {
-    justify-self: start;
+    justify-self: center;
 }
 
 .about-content h2 {
@@ -1324,13 +1320,11 @@ a {
 
     .about-inner {
         grid-template-columns: 1fr;
-        gap: 0.9rem;
     }
 
     .about-photo {
         width: min(100%, 373px);
         height: 280px;
-        justify-self: center;
     }
 
     .services-grid {
@@ -1610,8 +1604,7 @@ a {
     }
 
     .about-inner {
-        grid-template-columns: minmax(0, 360px) minmax(0, 1fr);
-        gap: 0.45rem;
+        gap: 0.1rem;
     }
 
     .about-content h2 {
