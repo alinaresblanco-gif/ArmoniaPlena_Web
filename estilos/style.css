@@ -606,6 +606,16 @@ a {
     margin: 0.65rem 1rem 0.9rem 0;
 }
 
+.training-card .training-side-photo {
+    float: right;
+    width: clamp(70px, 10vw, 118px);
+    height: auto;
+    margin: 0.68rem 0 0.65rem 1rem;
+    border-radius: 12px;
+    border: 1px solid rgba(159, 74, 167, 0.14);
+    box-shadow: 0 10px 20px rgba(123, 86, 145, 0.12);
+}
+
 .training-list {
     margin: 0.65rem 0 0;
     padding: 0;
@@ -1480,6 +1490,13 @@ a {
         display: block;
         width: min(100%, 390px);
         margin: 0.85rem auto 1rem;
+    }
+
+    .training-card .training-side-photo {
+        float: none;
+        display: block;
+        width: min(100%, 120px);
+        margin: 0.2rem auto 0.85rem;
     }
 
     .profile-card p {
