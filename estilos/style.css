@@ -833,7 +833,12 @@ a {
     color: #3e4760;
 }
 
+.service-panel-copy {
+    display: flow-root;
+}
+
 .hypno-services-catalog {
+    clear: both;
     margin-top: 0.95rem;
     padding-top: 0.8rem;
     border-top: 1px solid rgba(159, 74, 167, 0.16);
