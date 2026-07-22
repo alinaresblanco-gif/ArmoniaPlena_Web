@@ -839,8 +839,8 @@ a {
 
 .hypno-services-catalog {
     clear: both;
-    margin-top: 0.95rem;
-    padding-top: 0.8rem;
+    margin-top: 0.5rem;
+    padding-top: 0.55rem;
     border-top: 1px solid rgba(159, 74, 167, 0.16);
     display: flow-root;
 }
@@ -861,7 +861,7 @@ a {
 .hypno-catalog-photo {
     float: right;
     width: clamp(230px, 29vw, 350px);
-    margin: 0 0 0.82rem 1rem;
+    margin: -0.62rem 0 0.62rem 1rem;
     border-radius: 14px;
     overflow: hidden;
     border: 1px solid rgba(159, 74, 167, 0.16);
