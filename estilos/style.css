@@ -684,34 +684,343 @@ a {
     text-shadow: 0 0 0.25rem rgba(164, 77, 174, 0.25);
 }
 
-.service-list {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
-    margin-top: 1rem;
+.services-page-main {
+    padding-top: 0.95rem;
 }
 
-.service-list article {
-    padding: 1rem;
-    border-radius: 14px;
-    background: #fff;
-    border: 1px solid rgba(159, 74, 167, 0.16);
+.services-accordion-section {
+    width: min(100%, 1160px);
+    margin: 0 auto;
 }
 
-.service-list h3 {
+.services-accordion-intro {
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.services-accordion-intro h2 {
     margin: 0;
-    font-size: 1.12rem;
-    color: #8f3395;
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #6f3b9b;
+    font-size: clamp(1.45rem, 2.7vw, 2.6rem);
 }
 
-.service-list p {
-    margin: 0.5rem 0 0;
-    font-size: 0.95rem;
+.services-accordion-intro p {
+    margin: 0.55rem auto 0;
+    width: fit-content;
+    max-width: 54ch;
+    border-top: 1px solid rgba(159, 74, 167, 0.18);
+    padding-top: 0.7rem;
+    font-size: clamp(0.96rem, 1.2vw, 1.1rem);
+    color: #5b5770;
 }
 
-.services-showcase {
+.services-accordion {
+    display: grid;
+    gap: 1rem;
+}
+
+.service-accordion-item {
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid rgba(159, 74, 167, 0.18);
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(65, 51, 90, 0.12);
+}
+
+.service-accordion-item h3 {
+    margin: 0;
+}
+
+.service-accordion-trigger {
+    width: 100%;
+    border: 0;
+    padding: 0.92rem 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    color: #fff;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(1.2rem, 2.2vw, 2rem);
+    font-weight: 700;
+    text-align: left;
+    cursor: pointer;
+    transition: filter 220ms ease;
+}
+
+.service-accordion-trigger:hover {
+    filter: brightness(1.04);
+}
+
+.service-accordion-trigger:focus-visible {
+    outline: 3px solid rgba(255, 255, 255, 0.75);
+    outline-offset: -4px;
+}
+
+.service-trigger-left {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.service-trigger-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
     display: grid;
     place-items: center;
+    color: currentColor;
+    font-size: 1.02rem;
+    font-weight: 700;
+    border: 2px solid rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.12);
+    transition: transform 380ms ease, color 250ms ease, background-color 250ms ease;
+}
+
+.service-accordion-item.is-open .service-trigger-icon {
+    transform: rotate(18deg) scale(1.07);
+    background: rgba(255, 255, 255, 0.28);
+}
+
+.service-trigger-title {
+    font-style: italic;
+    letter-spacing: 0.01em;
+}
+
+.service-trigger-chevron {
+    width: 12px;
+    height: 12px;
+    border-right: 3px solid rgba(255, 255, 255, 0.96);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.96);
+    transform: rotate(45deg);
+    transition: transform 320ms ease;
+}
+
+.service-accordion-item.is-open .service-trigger-chevron {
+    transform: rotate(-135deg);
+}
+
+.service-accordion-panel {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transition: max-height 420ms ease, opacity 250ms ease;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 246, 250, 0.98));
+}
+
+.service-accordion-item.is-open .service-accordion-panel {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.service-accordion-panel-inner {
+    padding: 1rem 1.1rem 1.05rem;
+}
+
+.service-panel-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(220px, 0.9fr);
+    gap: 1rem;
+    align-items: stretch;
+}
+
+.service-panel-copy p {
+    margin: 0;
+    font-size: clamp(0.97rem, 1.12vw, 1.06rem);
+    line-height: 1.63;
+    color: #3e4760;
+}
+
+.service-benefits-list {
+    margin: 0.9rem 0 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 0.4rem;
+}
+
+.service-benefits-list li {
+    position: relative;
+    padding-left: 1.45rem;
+    font-size: clamp(0.95rem, 1.08vw, 1rem);
+    color: #2e4665;
+}
+
+.service-benefits-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 700;
+}
+
+.service-panel-media {
+    margin: 0;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(159, 74, 167, 0.14);
+    box-shadow: 0 8px 18px rgba(67, 58, 95, 0.12);
+}
+
+.service-panel-media img {
+    width: 100%;
+    height: 100%;
+    min-height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.service-panel-footer {
+    margin-top: 0.92rem;
+    padding-top: 0.78rem;
+    border-top: 1px solid rgba(159, 74, 167, 0.14);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.9rem;
+}
+
+.service-testimonial {
+    margin: 0;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+    font-size: clamp(1rem, 1.15vw, 1.2rem);
+    color: #4e4a71;
+}
+
+.service-cta,
+.services-whatsapp-main {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    border: 0;
+    padding: 0.68rem 1.35rem;
+    font-size: clamp(1rem, 1.1vw, 1.2rem);
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(180deg, #58b177, #3e8f5d);
+    box-shadow: 0 8px 14px rgba(45, 110, 72, 0.28);
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.service-cta:hover,
+.services-whatsapp-main:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 16px rgba(45, 110, 72, 0.34);
+}
+
+.services-closure {
+    margin-top: 1.25rem;
+    text-align: center;
+}
+
+.services-closure p {
+    margin: 0;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(1.25rem, 1.7vw, 1.7rem);
+    font-style: italic;
+    color: #4e4a71;
+}
+
+.services-whatsapp-main {
+    margin-top: 0.85rem;
+    min-width: min(100%, 310px);
+}
+
+.service-tone-violet .service-accordion-trigger {
+    background: linear-gradient(120deg, #7a65c9 0%, #8b5dc5 48%, #8f67cb 100%);
+}
+
+.service-tone-green .service-accordion-trigger {
+    background: linear-gradient(120deg, #75ba60 0%, #80c362 48%, #90c96f 100%);
+}
+
+.service-tone-blue .service-accordion-trigger {
+    background: linear-gradient(120deg, #6ea9df 0%, #77aee2 52%, #8ab9e7 100%);
+}
+
+.service-tone-violet .service-benefits-list li::before {
+    color: #6f44a7;
+}
+
+.service-tone-green .service-benefits-list li::before {
+    color: #4d9559;
+}
+
+.service-tone-blue .service-benefits-list li::before {
+    color: #4a7fb8;
+}
+
+@media (max-width: 980px) {
+    .service-panel-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-panel-media img {
+        min-height: 190px;
+    }
+
+    .service-panel-footer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .service-cta {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .services-page-main {
+        padding-top: 0.55rem;
+    }
+
+    .services-accordion-intro {
+        margin-bottom: 0.9rem;
+    }
+
+    .services-accordion-intro p {
+        font-size: 0.92rem;
+        padding-top: 0.5rem;
+    }
+
+    .service-accordion-trigger {
+        padding: 0.78rem 0.82rem;
+        font-size: 1.27rem;
+    }
+
+    .service-trigger-icon {
+        width: 31px;
+        height: 31px;
+        font-size: 0.93rem;
+    }
+
+    .service-accordion-panel-inner {
+        padding: 0.78rem 0.82rem 0.88rem;
+    }
+
+    .service-panel-copy p {
+        font-size: 0.92rem;
+    }
+
+    .service-benefits-list li {
+        font-size: 0.92rem;
+    }
+
+    .service-panel-media img {
+        min-height: 160px;
+    }
+
+    .services-closure p {
+        font-size: 1.17rem;
+    }
+
+    .services-whatsapp-main {
+        width: 100%;
+    }
 }
 
 .contact-grid {
