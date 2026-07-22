@@ -578,6 +578,42 @@ a {
     text-align: justify;
 }
 
+.training-card {
+    margin-top: 1.45rem;
+    background: linear-gradient(180deg, #ffffff 0%, #fcf9ff 100%);
+}
+
+.training-card .training-photo {
+    width: clamp(250px, 34vw, 430px);
+}
+
+.training-list {
+    margin: 1rem 0 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 0.75rem;
+}
+
+.training-list li {
+    position: relative;
+    padding-left: 1.55rem;
+    font-size: clamp(0.525rem, 0.85vw, 0.675rem);
+    line-height: 1.55;
+    color: #3f3f3f;
+    text-align: left;
+}
+
+.training-list li::before {
+    content: '●';
+    position: absolute;
+    left: 0;
+    top: 0.04em;
+    color: #a44dae;
+    font-size: 0.95em;
+    text-shadow: 0 0 0.25rem rgba(164, 77, 174, 0.25);
+}
+
 .service-list {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1428,6 +1464,14 @@ a {
     }
 
     .profile-card p {
+        text-align: left;
+    }
+
+    .training-list {
+        gap: 0.85rem;
+    }
+
+    .training-list li {
         text-align: left;
     }
 
