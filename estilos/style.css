@@ -573,6 +573,23 @@ a {
     font-family: inherit;
 }
 
+.intro-card h2 {
+    position: relative;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.55rem;
+}
+
+.intro-card h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: clamp(140px, 24vw, 230px);
+    height: 3px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, rgba(164, 77, 174, 0.95) 0%, rgba(183, 109, 194, 0.35) 100%);
+}
+
 .profile-card p {
     font-size: clamp(0.525rem, 0.85vw, 0.675rem);
     text-align: justify;
