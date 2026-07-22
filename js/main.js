@@ -130,8 +130,8 @@ if (accordions.length > 0) {
 
 const specialtyButtons = document.querySelectorAll('[data-specialty-button]');
 const specialtyModal = document.querySelector('[data-specialty-modal]');
-const specialtyModalTitle = document.querySelector('[data-specialty-title]');
-const specialtyModalDescription = document.querySelector('[data-specialty-description]');
+const specialtyModalTitle = document.querySelector('[data-specialty-modal-title]');
+const specialtyModalDescription = document.querySelector('[data-specialty-modal-description]');
 const specialtyWhatsappLink = document.querySelector('[data-specialty-whatsapp]');
 const specialtyCloseButtons = document.querySelectorAll('[data-specialty-close]');
 
