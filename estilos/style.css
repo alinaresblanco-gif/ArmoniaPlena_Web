@@ -626,6 +626,20 @@ a {
     box-shadow: 0 10px 20px rgba(123, 86, 145, 0.12);
 }
 
+.mission-card {
+    margin-top: 1.45rem;
+}
+
+.mission-card .mission-photo {
+    float: left;
+    width: clamp(120px, 17vw, 220px);
+    height: auto;
+    margin: 0.68rem 1rem 0.75rem 0;
+    border-radius: 12px;
+    border: 1px solid rgba(159, 74, 167, 0.14);
+    box-shadow: 0 10px 20px rgba(123, 86, 145, 0.12);
+}
+
 .training-list {
     margin: 0.65rem 0 0;
     padding: 0;
@@ -1510,6 +1524,13 @@ a {
     }
 
     .intervention-card .intervention-side-photo {
+        float: none;
+        display: block;
+        width: min(100%, 210px);
+        margin: 0.2rem auto 0.85rem;
+    }
+
+    .mission-card .mission-photo {
         float: none;
         display: block;
         width: min(100%, 210px);
