@@ -709,6 +709,19 @@ a {
     font-size: 0.95rem;
 }
 
+.services-showcase {
+    display: grid;
+    place-items: center;
+}
+
+.services-showcase-image {
+    width: min(100%, 560px);
+    height: auto;
+    border-radius: 14px;
+    border: 1px solid rgba(159, 74, 167, 0.14);
+    box-shadow: 0 10px 22px rgba(123, 86, 145, 0.14);
+}
+
 .contact-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
