@@ -616,6 +616,16 @@ a {
     box-shadow: 0 10px 20px rgba(123, 86, 145, 0.12);
 }
 
+.intervention-card .intervention-side-photo {
+    float: right;
+    width: clamp(120px, 17vw, 220px);
+    height: auto;
+    margin: 0.68rem 0 0.75rem 1rem;
+    border-radius: 12px;
+    border: 1px solid rgba(159, 74, 167, 0.14);
+    box-shadow: 0 10px 20px rgba(123, 86, 145, 0.12);
+}
+
 .training-list {
     margin: 0.65rem 0 0;
     padding: 0;
@@ -1496,6 +1506,13 @@ a {
         float: none;
         display: block;
         width: min(100%, 120px);
+        margin: 0.2rem auto 0.85rem;
+    }
+
+    .intervention-card .intervention-side-photo {
+        float: none;
+        display: block;
+        width: min(100%, 210px);
         margin: 0.2rem auto 0.85rem;
     }
 
