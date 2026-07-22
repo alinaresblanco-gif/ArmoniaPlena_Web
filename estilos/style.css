@@ -583,6 +583,23 @@ a {
     background: linear-gradient(180deg, #ffffff 0%, #fcf9ff 100%);
 }
 
+.training-card h2 {
+    position: relative;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.55rem;
+}
+
+.training-card h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: clamp(140px, 24vw, 230px);
+    height: 3px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, rgba(164, 77, 174, 0.95) 0%, rgba(183, 109, 194, 0.35) 100%);
+}
+
 .training-card .training-photo {
     float: left;
     width: clamp(90px, 12vw, 150px);
@@ -590,18 +607,18 @@ a {
 }
 
 .training-list {
-    margin: 1rem 0 0;
+    margin: 0.65rem 0 0;
     padding: 0;
     list-style: none;
     display: grid;
-    gap: 0.75rem;
+    gap: 0.62rem;
 }
 
 .training-list li {
     position: relative;
-    padding-left: 1.55rem;
+    padding-left: 1.4rem;
     font-size: clamp(0.525rem, 0.85vw, 0.675rem);
-    line-height: 1.55;
+    line-height: 1.48;
     color: #3f3f3f;
     text-align: left;
 }
@@ -1470,7 +1487,7 @@ a {
     }
 
     .training-list {
-        gap: 0.85rem;
+        gap: 0.72rem;
     }
 
     .training-list li {
