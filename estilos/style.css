@@ -21,6 +21,10 @@ body {
     padding: 0;
 }
 
+html {
+    scrollbar-gutter: stable;
+}
+
 body {
     font-family: 'Montserrat', system-ui, sans-serif;
     background: var(--bg-page);
@@ -1126,9 +1130,12 @@ a {
     align-items: center;
     justify-content: center;
     width: 100%;
+    min-height: 52px;
     padding: 0.78rem 1rem;
     border-radius: 10px;
     font-weight: 700;
+    text-align: center;
+    line-height: 1.28;
     color: #fff;
     background: linear-gradient(180deg, #58b177, #3e8f5d);
     box-shadow: 0 8px 14px rgba(45, 110, 72, 0.28);

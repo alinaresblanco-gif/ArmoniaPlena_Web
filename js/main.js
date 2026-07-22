@@ -52,6 +52,16 @@ if (contactForm instanceof HTMLFormElement) {
 
 const accordions = document.querySelectorAll('[data-accordion]');
 
+const syncOpenAccordionHeights = () => {
+	const openPanels = document.querySelectorAll('.service-accordion-item.is-open .service-accordion-panel');
+
+	openPanels.forEach((panel) => {
+		if (panel instanceof HTMLElement) {
+			panel.style.maxHeight = panel.scrollHeight + 'px';
+		}
+	});
+};
+
 if (accordions.length > 0) {
 	const setupAccordion = (accordion) => {
 		const items = Array.from(accordion.querySelectorAll('.service-accordion-item'));
@@ -106,6 +116,8 @@ if (accordions.length > 0) {
 					setItemState(item, true);
 				}
 			});
+
+			syncOpenAccordionHeights();
 		});
 	};
 
@@ -135,6 +147,8 @@ if (
 	const closeSpecialtyModal = () => {
 		specialtyModal.hidden = true;
 		document.body.classList.remove('modal-open');
+		document.body.style.paddingRight = '';
+		syncOpenAccordionHeights();
 
 		if (lastFocusedElement instanceof HTMLElement) {
 			lastFocusedElement.focus();
@@ -151,8 +165,12 @@ if (
 		specialtyWhatsappLink.href = 'https://wa.me/34627739587?text=' + encodeURIComponent(whatsappMessage);
 
 		lastFocusedElement = button;
+		const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+
+		document.body.style.paddingRight = scrollbarWidth > 0 ? scrollbarWidth + 'px' : '';
 		specialtyModal.hidden = false;
 		document.body.classList.add('modal-open');
+		syncOpenAccordionHeights();
 	};
 
 	specialtyButtons.forEach((button) => {
