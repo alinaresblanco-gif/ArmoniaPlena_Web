@@ -714,12 +714,29 @@ a {
     place-items: center;
 }
 
+.page-main-services {
+    padding-top: 0.55rem;
+}
+
 .services-showcase-image {
-    width: min(100%, 560px);
-    height: auto;
+    width: min(100%, 980px);
+    aspect-ratio: 21 / 6;
+    object-fit: cover;
+    object-position: center;
     border-radius: 14px;
     border: 1px solid rgba(159, 74, 167, 0.14);
     box-shadow: 0 10px 22px rgba(123, 86, 145, 0.14);
+}
+
+@media (max-width: 700px) {
+    .page-main-services {
+        padding-top: 0.35rem;
+    }
+
+    .services-showcase-image {
+        aspect-ratio: 16 / 6;
+        border-radius: 12px;
+    }
 }
 
 .contact-grid {
