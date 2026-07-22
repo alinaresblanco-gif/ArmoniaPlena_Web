@@ -1995,3 +1995,13 @@ a {
     .profile-card p {
         font-size: clamp(0.525rem, 0.85vw, 0.675rem);
     }
+
+    @media (min-width: 701px) {
+        .profile-card p {
+            font-size: clamp(0.683rem, 1.105vw, 0.878rem);
+        }
+
+        .training-list li {
+            font-size: clamp(0.683rem, 1.105vw, 0.878rem);
+        }
+    }
