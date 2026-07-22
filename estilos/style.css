@@ -2623,3 +2623,15 @@ body.modal-open {
             font-size: clamp(0.683rem, 1.105vw, 0.878rem);
         }
     }
+
+    /* Iguala el tamaño del texto de "Sobre mí" (Inicio) al de Conóceme */
+    #sobre-mi .about-content p {
+        font-size: clamp(0.525rem, 0.85vw, 0.675rem);
+        line-height: 1.65;
+    }
+
+    @media (min-width: 701px) {
+        #sobre-mi .about-content p {
+            font-size: clamp(0.683rem, 1.105vw, 0.878rem);
+        }
+    }
