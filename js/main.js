@@ -115,3 +115,63 @@ if (accordions.length > 0) {
 		}
 	});
 }
+
+const specialtyButtons = document.querySelectorAll('[data-specialty-button]');
+const specialtyModal = document.querySelector('[data-specialty-modal]');
+const specialtyModalTitle = document.querySelector('[data-specialty-title]');
+const specialtyModalDescription = document.querySelector('[data-specialty-description]');
+const specialtyWhatsappLink = document.querySelector('[data-specialty-whatsapp]');
+const specialtyCloseButtons = document.querySelectorAll('[data-specialty-close]');
+
+if (
+	specialtyButtons.length > 0 &&
+	specialtyModal instanceof HTMLElement &&
+	specialtyModalTitle instanceof HTMLElement &&
+	specialtyModalDescription instanceof HTMLElement &&
+	specialtyWhatsappLink instanceof HTMLAnchorElement
+) {
+	let lastFocusedElement = null;
+
+	const closeSpecialtyModal = () => {
+		specialtyModal.hidden = true;
+		document.body.classList.remove('modal-open');
+
+		if (lastFocusedElement instanceof HTMLElement) {
+			lastFocusedElement.focus();
+		}
+	};
+
+	const openSpecialtyModal = (button) => {
+		const specialtyTitle = button.getAttribute('data-specialty-title') || 'Especialidad';
+		const specialtyDescription = button.getAttribute('data-specialty-description') || 'Especialidad terapéutica personalizada.';
+		const whatsappMessage = 'Me gustaría recibir información detallada de la especialidad: "' + specialtyTitle + '"';
+
+		specialtyModalTitle.textContent = specialtyTitle;
+		specialtyModalDescription.textContent = specialtyDescription;
+		specialtyWhatsappLink.href = 'https://wa.me/34627739587?text=' + encodeURIComponent(whatsappMessage);
+
+		lastFocusedElement = button;
+		specialtyModal.hidden = false;
+		document.body.classList.add('modal-open');
+	};
+
+	specialtyButtons.forEach((button) => {
+		if (button instanceof HTMLButtonElement) {
+			button.addEventListener('click', () => {
+				openSpecialtyModal(button);
+			});
+		}
+	});
+
+	specialtyCloseButtons.forEach((closeButton) => {
+		if (closeButton instanceof HTMLElement) {
+			closeButton.addEventListener('click', closeSpecialtyModal);
+		}
+	});
+
+	document.addEventListener('keydown', (event) => {
+		if (event.key === 'Escape' && !specialtyModal.hidden) {
+			closeSpecialtyModal();
+		}
+	});
+}
