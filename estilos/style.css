@@ -833,6 +833,56 @@ a {
     color: #3e4760;
 }
 
+.hypno-services-catalog {
+    margin-top: 0.95rem;
+    padding-top: 0.8rem;
+    border-top: 1px solid rgba(159, 74, 167, 0.16);
+}
+
+.hypno-services-catalog h4 {
+    margin: 0 0 0.7rem;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(1.08rem, 1.35vw, 1.35rem);
+    color: #6f44a7;
+}
+
+.hypno-services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.52rem;
+}
+
+.hypno-service-item {
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    align-items: start;
+    gap: 0.45rem;
+    padding: 0.54rem 0.58rem;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(250, 247, 253, 0.95), rgba(245, 239, 251, 0.95));
+    border: 1px solid rgba(159, 74, 167, 0.13);
+}
+
+.hypno-service-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 1rem;
+    color: #6f44a7;
+    background: #ffffff;
+    border: 1px solid rgba(159, 74, 167, 0.18);
+}
+
+.hypno-service-item p {
+    margin: 0;
+    font-size: clamp(0.83rem, 0.95vw, 0.92rem);
+    line-height: 1.35;
+    color: #424c67;
+    text-align: left;
+}
+
 .service-benefits-list {
     margin: 0.9rem 0 0;
     padding: 0;
@@ -959,6 +1009,10 @@ a {
         grid-template-columns: 1fr;
     }
 
+    .hypno-services-grid {
+        grid-template-columns: 1fr;
+    }
+
     .service-panel-media img {
         min-height: 190px;
     }
@@ -1004,6 +1058,25 @@ a {
 
     .service-panel-copy p {
         font-size: 0.92rem;
+    }
+
+    .hypno-services-catalog h4 {
+        font-size: 1.02rem;
+    }
+
+    .hypno-service-item {
+        grid-template-columns: 30px 1fr;
+        padding: 0.48rem 0.5rem;
+    }
+
+    .hypno-service-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+
+    .hypno-service-item p {
+        font-size: 0.86rem;
     }
 
     .service-benefits-list li {
