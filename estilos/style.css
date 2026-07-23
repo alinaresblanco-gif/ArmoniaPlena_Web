@@ -1194,6 +1194,10 @@ body.modal-open {
         padding-top: 0.55rem;
     }
 
+    .training-card .training-side-photo {
+        display: none;
+    }
+
     .services-accordion-intro {
         margin-bottom: 0.9rem;
     }
