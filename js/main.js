@@ -135,6 +135,21 @@ const specialtyModalDescription = document.querySelector('[data-specialty-modal-
 const specialtyWhatsappLink = document.querySelector('[data-specialty-whatsapp]');
 const specialtyCloseButtons = document.querySelectorAll('[data-specialty-close]');
 
+const specialtyModalOverrides = {
+	'Banda gástrica virtual (6 sesiones)': {
+		title: 'Tratamiento del sobrepeso utilizando la BGV (Banda Gástrica Virtual)',
+		description:
+			'La banda gástrica virtual es un procedimiento psicológico y de hipnosis que reprograma el subconsciente para hacerle creer a tu cerebro que tu estómago es más pequeño. A través de la sugestión, busca reducir el apetito y generar saciedad rápida sin necesidad de pasar por una cirugía real o realizar dietas estrictas.\n\n' +
+			'Te guío para que imagines la colocación de una banda que reduce el tamaño de su estómago.\n\n' +
+			'Hago una reprogramación trabajando con el subconsciente para cambiar la relación emocional con la comida, eliminando la ansiedad y enseñando al cerebro a escuchar las señales naturales de saciedad.\n\n' +
+			'A diferencia de las cirugías reales (como el bypass o la manga gástrica), no hay efectos secundarios físicos ni riesgos quirúrgicos.\n\n' +
+			'Durante el mantenimiento te ayudo a consolidar hábitos de por vida y a evitar el efecto rebote.\n\n' +
+			'El programa completo de banda gástrica virtual suele durar 6 semanas, estructurado en una sesión semanal.\n\n' +
+			'Te envío un audio de refuerzo tras cada sesión, que escuchas todas las noches antes de dormir con el objetivo de grabar las nuevas instrucciones en el subconsciente y mantener el efecto de saciedad activo.\n\n' +
+			'El cambio psicológico comienza desde la primera sesión, pero el tratamiento en casa con los audios puede extenderse durante varios meses hasta que los nuevos hábitos alimenticios se automaticen por completo.'
+	}
+};
+
 if (
 	specialtyButtons.length > 0 &&
 	specialtyModal instanceof HTMLElement &&
@@ -158,10 +173,13 @@ if (
 	const openSpecialtyModal = (button) => {
 		const specialtyTitle = button.getAttribute('data-specialty-title') || 'Especialidad';
 		const specialtyDescription = button.getAttribute('data-specialty-description') || 'Especialidad terapéutica personalizada.';
+		const specialtyOverride = specialtyModalOverrides[specialtyTitle];
+		const modalTitle = specialtyOverride ? specialtyOverride.title : specialtyTitle;
+		const modalDescription = specialtyOverride ? specialtyOverride.description : specialtyDescription;
 		const whatsappMessage = 'Me gustaría recibir información detallada de la especialidad: "' + specialtyTitle + '"';
 
-		specialtyModalTitle.textContent = specialtyTitle;
-		specialtyModalDescription.textContent = specialtyDescription;
+		specialtyModalTitle.textContent = modalTitle;
+		specialtyModalDescription.textContent = modalDescription;
 		specialtyWhatsappLink.href = 'https://wa.me/34627739587?text=' + encodeURIComponent(whatsappMessage);
 
 		lastFocusedElement = button;
