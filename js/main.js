@@ -173,7 +173,15 @@ if (
 	const openSpecialtyModal = (button) => {
 		const specialtyTitle = button.getAttribute('data-specialty-title') || 'Especialidad';
 		const specialtyDescription = button.getAttribute('data-specialty-description') || 'Especialidad terapéutica personalizada.';
-		const specialtyOverride = specialtyModalOverrides[specialtyTitle];
+		const normalizedTitle = specialtyTitle
+			.normalize('NFD')
+			.replace(/[\u0300-\u036f]/g, '')
+			.toLowerCase();
+		const specialtyOverride =
+			specialtyModalOverrides[specialtyTitle] ||
+			(normalizedTitle.includes('banda gastrica virtual (6 sesiones)')
+				? specialtyModalOverrides['Banda gástrica virtual (6 sesiones)']
+				: undefined);
 		const modalTitle = specialtyOverride ? specialtyOverride.title : specialtyTitle;
 		const modalDescription = specialtyOverride ? specialtyOverride.description : specialtyDescription;
 		const whatsappMessage = 'Me gustaría recibir información detallada de la especialidad: "' + specialtyTitle + '"';
