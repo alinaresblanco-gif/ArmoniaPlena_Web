@@ -837,6 +837,18 @@ a {
     color: #3e4760;
 }
 
+.hypno-main-text h4 {
+    margin: 0 0 0.55rem;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(1.1rem, 1.45vw, 1.4rem);
+    color: #6f44a7;
+}
+
+#service-panel-hipnoterapia .hypno-main-text p {
+    margin-top: 0.75rem;
+    text-align: justify;
+}
+
 .service-panel-copy {
     display: flow-root;
 }
