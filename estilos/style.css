@@ -2653,3 +2653,10 @@ body.modal-open {
             font-size: clamp(0.683rem, 1.105vw, 0.878rem);
         }
     }
+
+    /* Regla final para asegurar que el birrete no aparezca en móvil */
+    @media (max-width: 900px) {
+        .training-card .training-side-photo {
+            display: none !important;
+        }
+    }
