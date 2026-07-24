@@ -185,7 +185,7 @@ a {
 
 @media (min-width: 1025px) {
     #inicio .hero-left-flower {
-        bottom: -92px;
+        bottom: -132px;
     }
 }
 
@@ -1895,7 +1895,7 @@ body.modal-open {
     #inicio .hero-left-flower {
         display: block;
         left: 8px;
-        bottom: -90px;
+        bottom: -75px;
         width: clamp(128px, 36vw, 206px);
         opacity: 0.92;
     }
