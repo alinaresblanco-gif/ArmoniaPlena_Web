@@ -173,7 +173,7 @@ a {
 #inicio .hero-left-flower {
     position: absolute;
     left: clamp(6px, 1.4vw, 26px);
-    bottom: clamp(-92px, calc(1.8vw - 100px), -76px);
+    bottom: clamp(8px, 1.8vw, 24px);
     width: clamp(220px, 23vw, 410px);
     height: auto;
     object-fit: contain;
@@ -181,6 +181,12 @@ a {
     z-index: 3;
     opacity: 0.98;
     filter: drop-shadow(0 10px 18px rgba(122, 62, 130, 0.22));
+}
+
+@media (min-width: 1025px) {
+    #inicio .hero-left-flower {
+        bottom: -92px;
+    }
 }
 
 .hero-overlay {
