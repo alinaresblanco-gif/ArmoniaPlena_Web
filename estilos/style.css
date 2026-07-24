@@ -173,7 +173,7 @@ a {
 #inicio .hero-left-flower {
     position: absolute;
     left: clamp(6px, 1.4vw, 26px);
-    bottom: clamp(68px, 8.4vw, 132px);
+    bottom: clamp(8px, 1.8vw, 24px);
     width: clamp(220px, 23vw, 410px);
     height: auto;
     object-fit: contain;
@@ -1832,7 +1832,7 @@ body.modal-open {
     #inicio .hero-left-flower {
         display: block;
         left: 10px;
-        bottom: 86px;
+        bottom: 16px;
         width: clamp(170px, 26vw, 300px);
         opacity: 0.95;
     }
@@ -1889,7 +1889,7 @@ body.modal-open {
     #inicio .hero-left-flower {
         display: block;
         left: 8px;
-        bottom: 54px;
+        bottom: 10px;
         width: clamp(128px, 36vw, 206px);
         opacity: 0.92;
     }
