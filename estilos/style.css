@@ -370,8 +370,8 @@ a {
     margin: 0 0 2.7rem;
     transform: none;
     border-radius: 24px;
-    -webkit-mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 68%, rgba(0, 0, 0, 0.28) 90%, rgba(0, 0, 0, 0) 100%);
-    mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 68%, rgba(0, 0, 0, 0.28) 90%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0.72) 78%, rgba(0, 0, 0, 0.28) 92%, rgba(0, 0, 0, 0) 100%);
+    mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0.72) 78%, rgba(0, 0, 0, 0.28) 92%, rgba(0, 0, 0, 0) 100%);
 }
 
 .about {
