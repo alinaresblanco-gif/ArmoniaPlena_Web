@@ -170,6 +170,18 @@ a {
         radial-gradient(circle at 50% 42%, #c385cd 0%, #a85bb6 48%, #8d469b 100%);
 }
 
+#inicio .hero-left-flower {
+    position: absolute;
+    left: clamp(-28px, -1.6vw, -8px);
+    bottom: clamp(44px, 7.2vw, 92px);
+    width: clamp(170px, 18vw, 330px);
+    height: auto;
+    object-fit: contain;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.9;
+}
+
 .hero-overlay {
     position: absolute;
     inset: 0;
@@ -1816,6 +1828,10 @@ body.modal-open {
 }
 
 @media (max-width: 1024px) and (min-width: 701px) {
+    #inicio .hero-left-flower {
+        display: none;
+    }
+
     #inicio .hero-inner {
         min-height: auto;
         grid-template-columns: 1fr;
@@ -1865,6 +1881,10 @@ body.modal-open {
 }
 
 @media (max-width: 700px) {
+    #inicio .hero-left-flower {
+        display: none;
+    }
+
     .header-wrap {
         min-height: 124px;
         gap: 0.45rem;
