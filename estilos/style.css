@@ -1178,6 +1178,30 @@ a {
     white-space: pre-line;
 }
 
+.specialty-modal-description p {
+    margin: 0 0 0.92rem;
+    text-align: justify;
+}
+
+.specialty-modal-description p:last-child {
+    margin-bottom: 0;
+}
+
+.specialty-modal-description ul {
+    margin: 0.2rem 0 0.95rem 1.15rem;
+    padding: 0;
+}
+
+.specialty-modal-description li {
+    margin-bottom: 0.5rem;
+    text-align: justify;
+}
+
+.specialty-modal-description strong {
+    font-weight: 700;
+    color: #2e3550;
+}
+
 .specialty-modal-cta {
     margin-top: 1.05rem;
     display: inline-flex;

@@ -136,6 +136,20 @@ const specialtyWhatsappLink = document.querySelector('[data-specialty-whatsapp]'
 const specialtyCloseButtons = document.querySelectorAll('[data-specialty-close]');
 
 const specialtyModalOverrides = {
+	'Entrevista informativa': {
+		title: 'Entrevista informativa',
+		descriptionHtml:
+			'<p>Dar el primer paso no siempre es fácil. Por eso te ofrezco una <strong>entrevista inicial gratuita y sin compromiso</strong>, un espacio donde podremos conocernos, hablar sobre tu situación y resolver todas tus dudas.</p>' +
+			'<p>Durante esta primera conversación:</p>' +
+			'<ul>' +
+			'<li>Conoceré tu caso y tus objetivos.</li>' +
+			'<li>Te explicaré cómo trabajo y cómo puede ayudarte la hipnoterapia.</li>' +
+			'<li>Valoraremos si este proceso es el más adecuado para ti.</li>' +
+			'<li>Podrás decidir con total tranquilidad si deseas comenzar.</li>' +
+			'</ul>' +
+			'<p>Ya sea que quieras recuperar un sueño reparador, dejar de fumar o cambiar tu relación con la comida mediante la banda gástrica virtual, estaré encantada de escucharte y orientarte.</p>' +
+			'<p><strong>Tu bienestar puede empezar con una simple conversación. Reserva hoy tu entrevista inicial gratuita.</strong></p>'
+	},
 	'Banda gástrica virtual (6 sesiones)': {
 		title: 'Tratamiento del sobrepeso utilizando la BGV (Banda Gástrica Virtual)',
 		description:
@@ -184,10 +198,17 @@ if (
 				: undefined);
 		const modalTitle = specialtyOverride ? specialtyOverride.title : specialtyTitle;
 		const modalDescription = specialtyOverride ? specialtyOverride.description : specialtyDescription;
+		const modalDescriptionHtml = specialtyOverride ? specialtyOverride.descriptionHtml : undefined;
 		const whatsappMessage = 'Me gustaría recibir información detallada de la especialidad: "' + specialtyTitle + '"';
 
 		specialtyModalTitle.textContent = modalTitle;
-		specialtyModalDescription.textContent = modalDescription;
+
+		if (typeof modalDescriptionHtml === 'string' && modalDescriptionHtml.length > 0) {
+			specialtyModalDescription.innerHTML = modalDescriptionHtml;
+		} else {
+			specialtyModalDescription.textContent = modalDescription;
+		}
+
 		specialtyWhatsappLink.href = 'https://wa.me/34627739587?text=' + encodeURIComponent(whatsappMessage);
 
 		lastFocusedElement = button;
