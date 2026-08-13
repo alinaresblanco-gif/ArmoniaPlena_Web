@@ -893,6 +893,61 @@ a {
     display: flow-root;
 }
 
+#service-panel-mindfulness .service-panel-copy p {
+    margin-top: 0.75rem;
+    text-align: justify;
+}
+
+#service-panel-mindfulness .service-panel-copy p:first-of-type {
+    margin-top: 0;
+}
+
+.mindfulness-rich-title {
+    margin: 0;
+    text-align: center;
+    font-size: clamp(1.28rem, 1.75vw, 1.7rem);
+    line-height: 1.3;
+    color: #1f2435;
+    font-weight: 800;
+}
+
+.mindfulness-rich-title span {
+    text-decoration: underline;
+}
+
+.mindfulness-rich-subtitle {
+    margin: 1.05rem 0 0;
+    text-align: center;
+    font-size: clamp(1.16rem, 1.5vw, 1.45rem);
+    line-height: 1.28;
+    color: #1f2435;
+    font-weight: 800;
+}
+
+.mindfulness-rich-list {
+    margin: 0.62rem 0 0.75rem 1.2rem;
+    padding: 0;
+    list-style: disc;
+    display: block;
+}
+
+.mindfulness-rich-list li {
+    margin: 0 0 0.4rem;
+    padding-left: 0;
+    font-size: clamp(0.95rem, 1.08vw, 1rem);
+    line-height: 1.56;
+    color: #2e4665;
+    text-align: justify;
+}
+
+.mindfulness-rich-list-strong li {
+    margin-bottom: 0.22rem;
+}
+
+.mindfulness-rich-centered {
+    text-align: center !important;
+}
+
 .hypno-services-catalog {
     clear: both;
     margin-top: 0.5rem;
