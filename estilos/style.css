@@ -948,6 +948,27 @@ a {
     text-align: center !important;
 }
 
+#service-panel-mindfulness .service-panel-grid {
+    display: block;
+}
+
+.mindfulness-catalog-photo {
+    float: right;
+    width: clamp(230px, 29vw, 350px);
+    margin: 0.2rem 0 0.7rem 1rem;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(159, 74, 167, 0.16);
+    box-shadow: 0 8px 18px rgba(67, 58, 95, 0.12);
+    background: #fff;
+}
+
+.mindfulness-catalog-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .hypno-services-catalog {
     clear: both;
     margin-top: 0.5rem;
@@ -1296,6 +1317,12 @@ body.modal-open {
 
     .service-panel-media img {
         min-height: 190px;
+    }
+
+    .mindfulness-catalog-photo {
+        float: none;
+        width: min(100%, 420px);
+        margin: 0 auto 0.9rem;
     }
 
     .service-panel-footer {
