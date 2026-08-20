@@ -373,6 +373,7 @@ a {
 #inicio .hero-content .btn-whatsapp {
     align-self: flex-start;
     margin-top: clamp(0.8rem, 1.8vw, 1.5rem);
+    margin-bottom: clamp(2.6rem, 4.6vw, 3.8rem);
     margin-left: 0;
     padding: clamp(0.9rem, 1.3vw, 1.15rem) clamp(1.35rem, 2.4vw, 2.1rem);
     font-size: clamp(1rem, 1.5vw, 1.35rem);
@@ -2823,9 +2824,4 @@ body.modal-open {
         }
     }
 
-    /* Regla final: baja 20px el CTA del hero solo en ordenador */
-    @media (min-width: 701px) {
-        #inicio .hero-content .btn-whatsapp {
-            transform: translateY(20px) !important;
-        }
-    }
+    /* CTA del hero: sin desplazamiento vertical para evitar que quede tapado por la onda decorativa */
