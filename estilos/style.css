@@ -173,7 +173,7 @@ a {
 #inicio .hero-left-flower {
     position: absolute;
     left: clamp(6px, 1.4vw, 26px);
-    bottom: calc(clamp(8px, 1.8vw, 24px) + 100px);
+    bottom: calc(clamp(8px, 1.8vw, 24px) + 300px);
     width: clamp(220px, 23vw, 410px);
     height: auto;
     object-fit: contain;
@@ -185,7 +185,7 @@ a {
 
 @media (min-width: 1025px) {
     #inicio .hero-left-flower {
-        bottom: -42px;
+        bottom: 58px;
     }
 }
 
