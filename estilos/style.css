@@ -2000,11 +2000,7 @@ body.modal-open {
 
 @media (max-width: 700px) {
     #inicio .hero-left-flower {
-        display: block;
-        left: 8px;
-        bottom: -75px;
-        width: clamp(64px, 18vw, 103px);
-        opacity: 0.92;
+        display: none;
     }
 
     .header-wrap {
