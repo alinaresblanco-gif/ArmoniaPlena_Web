@@ -180,12 +180,14 @@ a {
     pointer-events: none;
     z-index: 3;
     opacity: 0.98;
+    display: none;
     filter: drop-shadow(0 10px 18px rgba(122, 62, 130, 0.22));
 }
 
 @media (min-width: 1025px) {
     #inicio .hero-left-flower {
-        bottom: -18px;
+        display: block;
+        bottom: 32px;
     }
 }
 
@@ -1943,11 +1945,7 @@ body.modal-open {
 
 @media (max-width: 1024px) and (min-width: 701px) {
     #inicio .hero-left-flower {
-        display: block;
-        left: 10px;
-        bottom: -84px;
-        width: clamp(85px, 13vw, 150px);
-        opacity: 0.95;
+        display: none;
     }
 
     #inicio .hero-inner {
